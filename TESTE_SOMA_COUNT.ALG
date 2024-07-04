@@ -12,6 +12,7 @@ Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
    Count <- 0
    Soma  <- 0
+   Soma2 <- 0
    
    para i de 1 ate 5 faca
      Count <- Count + 10
@@ -23,7 +24,7 @@ Inicio
    
    X <- 6
    Y <- 6
-   
+
    enquanto (X <= 5) faca
      Soma <- Soma + X
      
