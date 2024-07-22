@@ -52,10 +52,8 @@ Inicio
    escreval
    
    para i de 0 ate 3 faca
-     para j de 0 ate 3 faca
-       Vet_Media[i] <- Vet_Soma[i] / 4
-     fimpara
-     
+     Vet_Media[i] <- Vet_Soma[i] / 4
+
      escreval("Média [", i, "]: ", Vet_Media[i]:2:1)
      escreval
    fimpara
