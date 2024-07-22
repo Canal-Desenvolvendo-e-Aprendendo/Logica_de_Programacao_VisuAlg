@@ -1,11 +1,11 @@
 Algoritmo "Vetor_Matriz"
 // 
 //  
-// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
+// Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 17/07/2024
 Var
-// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+// Seção de Declarações das variáveis 
    i, j: Inteiro
    
    Mat_Nota:  Vetor [0..3, 0..3] de Real
@@ -13,39 +13,51 @@ Var
    Vet_Media: Vetor [0..3] de Real
 
 Inicio
-// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+// Seção de Comandos, procedimento, funções, operadores, etc... 
    para i de 0 ate 3 faca
      para j de 0 ate 3 faca
-       escreva("Informe uma Nota [", i, " , ", j, "] : ")
+       escreva("Informe uma Nota [", i, " , ", j, "]: ")
        leia(Mat_Nota[i, j])
      fimpara
      
      escreval
    fimpara
-
-   escreval("Matriz de Notas")
    
+   escreval("Matriz de Notas")
+
    para i de 0 ate 3 faca
      para j de 0 ate 3 faca
        escreva("Nota da Linha ", i, " - Coluna ", j, ": ")
        escreval(Mat_Nota[i, j]:2:1)
      fimpara
-     
+
      escreval
    fimpara
    
+   escreval("Vetor de Somas")
+   escreval
+   
    para i de 0 ate 3 faca
      Vet_Soma[i] <- 0
-
+   
      para j de 0 ate 3 faca
        Vet_Soma[i] <- Vet_Soma[i] + Mat_Nota[i, j]
      fimpara
+
+     escreval("Soma das Notas [", i, "]: ", Vet_Soma[i]:2:1)
+     escreval
    fimpara
    
+   escreval("Vetor de Médias")
+   escreval
+   
    para i de 0 ate 3 faca
-     Vet_Media[i] <- Vet_Soma[i] / 4
+     para j de 0 ate 3 faca
+       Vet_Media[i] <- Vet_Soma[i] / 4
+     fimpara
      
-     escreval("Media [", i, "]: ", Vet_Media[i]:2:1)
+     escreval("Média [", i, "]: ", Vet_Media[i]:2:1)
+     escreval
    fimpara
 
 Fimalgoritmo
