@@ -19,10 +19,10 @@ Inicio
        escreva("Informe uma Nota [", i, " , ", j, "]: ")
        leia(Mat_Nota[i, j])
      fimpara
-     
+
      escreval
    fimpara
-   
+
    escreval("Matriz de Notas")
 
    para i de 0 ate 3 faca
@@ -34,7 +34,7 @@ Inicio
      escreval
    fimpara
    
-   escreval("Vetor de Somas")
+   escreval("Vetor da Média das Notas")
    escreval
    
    para i de 0 ate 3 faca
@@ -42,17 +42,9 @@ Inicio
        Vet_Soma[i] <- Vet_Soma[i] + Mat_Nota[i, j]
      fimpara
 
-     escreval("Soma das Notas [", i, "]: ", Vet_Soma[i]:2:1)
-     escreval
-   fimpara
-   
-   escreval("Vetor de Médias")
-   escreval
-   
-   para i de 0 ate 3 faca
      Vet_Media[i] <- Vet_Soma[i] / 4
-
-     escreval("Média [", i, "]: ", Vet_Media[i]:2:1)
+     
+     escreval("Média das Notas da Linha ", i, ": ", Vet_Media[i]:2:1)
      escreval
    fimpara
 
