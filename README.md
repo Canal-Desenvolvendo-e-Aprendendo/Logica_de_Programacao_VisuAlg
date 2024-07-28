@@ -11,6 +11,6 @@
 
 - 💻 Não deixem de conferir!!
 
-- 💻 Toda Segunda e Sexta às 11:00 haverá sempre um vídeo novo no Canal.
+- 💻 Toda Sexta às 20:00 haverá sempre um vídeo novo no Canal.
   
 

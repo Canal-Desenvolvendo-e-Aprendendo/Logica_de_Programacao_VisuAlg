@@ -1,11 +1,11 @@
 Algoritmo "Vetor_Matriz"
 // 
 //  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 17/07/2024
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
    i, j: Inteiro
 
    Mat_Nota:  Vetor [0..3, 0..3] de Real
@@ -13,7 +13,7 @@ Var
    Vet_Media: Vetor [0..3] de Real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
    para i de 0 ate 3 faca
      para j de 0 ate 3 faca
        escreva("Informe uma Nota [", i, " , ", j, "]: ")
@@ -34,7 +34,7 @@ Inicio
      escreval
    fimpara
    
-   escreval("Vetor da Média das Notas")
+   escreval("Vetor da MÃ©dia das Notas")
    escreval
    
    para i de 0 ate 3 faca
@@ -44,7 +44,8 @@ Inicio
 
      Vet_Media[i] <- Vet_Soma[i] / 4
      
-     escreval("Média das Notas da Linha ", i, ": ", Vet_Media[i]:2:1)
+     escreval("MÃ©dia das Notas da Linha ", i, ": ", Vet_Media[i]:2:1)
      escreval
    fimpara
+
 Fimalgoritmo
