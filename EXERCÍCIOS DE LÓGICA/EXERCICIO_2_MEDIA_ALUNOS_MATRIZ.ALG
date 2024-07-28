@@ -1,33 +1,39 @@
-Algoritmo "Exercicio_2_Media_Alunos"
+Algoritmo "Exercicio_2_Media_Alunos_Matriz"
 
-// EXERCÍCIO 2
+// EXERCÍCIO 2 - MATRIZ
 
-// CRIAR UM ALGORITMO QUE REALIZE A MÉDIA DE VÁRIOS ALUNO QUE TERÃO
-// 4 NOTAS (CADA UM)
+// CRIAR UM ALGORITMO QUE REALIZE A MÉDIA DE VÁRIOS ALUNOS(AS) QUE
+// TERÃO 4 NOTAS (CADA UM)
 
-// SE OBTER 7,0 PONTOS OU MAIS - ESCREVER: "APROVADO!!! :-)"
-// SE OBTER 3,0 PONTOS OU MENOS - ESCREVER: "REPROVADO!!! :-("
-// SENÃO - ESCREVER: "EXAME!!! :-("
+// A QUANTIDADE DE ALUNOS POR TURMA SERÁ NO MÁXIMO 30, CASO PASSAR
+// DESTE VALOR, SOLICITAR PARA QUE SEJA INFORMADO NOVAMENTE A
+// QUANTIDADE DE ALUNOS E NÃO PERMITIR REALIZAR NADA ATÉ SER
+// INFORMADO UM NÚMERO VÁLIDO
 
 // SE FOR DIGITADO A NOTA MENOR QUE 0 OU MAIOR QUE 10,
 // INFORMAR O USUÁRIO E SOLICITAR PARA QUE SEJA INFORMADO
 // A NOTA NOVAMENTE
 
+// SE OBTER 7,0 PONTOS OU MAIS - ESCREVER: "APROVADO!!! :-)"
+// SE OBTER 3,0 PONTOS OU MENOS - ESCREVER: "REPROVADO!!! :-("
+// SENÃO - ESCREVER: "EXAME!!! :-("
+
 // RESULTADO:
 
-// ESCREVER OS NOMES DO ALUNOS, COM AS SUAS NOTAS E
+// ESCREVER OS NOMES DOS(AS) ALUNOS(AS), COM AS SUAS NOTAS E
 // SE FORAM APROVADOS OU NÃO
 
 Var
 // Variáveis
-   i, j, N: Inteiro
+   i, j, N:        Inteiro
 
 // Matrizes
    Mat_Notas:      Vetor [0..29, 0..3] de Real
    
 // Vetores
-   Vet_Soma :      Vetor [0..3] de Real
+   Vet_Soma :      Vetor [0..3]  de Real
    Vet_Media:      Vetor [0..29] de Real
+   
    Vet_Situacao:   Vetor [0..29] de Caractere
    Vet_Nome_Aluno: Vetor [0..29] de Caractere
 
@@ -38,21 +44,29 @@ Inicio
 
    escreval
 
+   se (N > 30) entao
+     enquanto (N > 30) faca
+       escreval("Quantidade Inválida de Alunos!!!")
+       escreva("Informe novamente a Quantidade de Alunos da Turma: ")
+       leia(N)
+
+       escreval
+     fimenquanto
+   fimse
+
    para i de 0 ate N - 1 faca
-     escreva("Informe o Nome do Aluno: ")
+     escreva("Informe o Nome do Aluno ", i + 1 , ": ")
      leia(Vet_Nome_Aluno[i])
-   fimpara
 
-   escreval
-
-   para i de 0 ate N - 1 faca
+     escreval
+     
      para j de 0 ate 3 faca
-        escreva("Aluno ", i + 1 , " - Nota  ", j + 1, ": ")
+        escreva("Nota  ", j + 1, ": ")
         leia(Mat_Notas[i, j])
         
         enquanto ((Mat_Notas[i, j] < 0) ou (Mat_Notas[i, j] > 10)) faca
           escreva("Nota Inválida! ")
-          escreva("Aluno ", i + 1 , " - Nota  ", j + 1, ": ")
+          escreva("Nota  ", j + 1, ": ")
           leia(Mat_Notas[i, j])
         fimenquanto
      fimpara
