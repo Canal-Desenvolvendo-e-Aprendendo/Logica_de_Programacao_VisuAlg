@@ -1,27 +1,27 @@
 Algoritmo "Exercicio_2_Media_Alunos_Vetor"
 
-// EXERCÕCIO 2 - VETOR
+// EXERC√çCIO 2 - VETOR
 
-// CRIAR UM ALGORITMO QUE REALIZE A M…DIA DE V¡RIOS ALUNOS QUE
-// TER√O 4 NOTAS (CADA UM)
+// CRIAR UM ALGORITMO QUE REALIZE A M√âDIA DE V√ÅRIOS ALUNOS QUE
+// TER√ÉO 4 NOTAS (CADA UM)
 
-// A QUANTIDADE DE ALUNOS POR TURMA SER√OÅNO M¡XIMO 30, CASO PASSAR
+// A QUANTIDADE DE ALUNOS POR TURMA SER√ÉO NO M√ÅXIMO 30, CASO PASSAR
 // DESTE VALOR, SOLICITAR PARA QUE SEJA INFORMADO NOVAMENTE A
-// QUANTIDADE DE ALUNOS E N√O PERMITIR REALIZAR NADA AT… SER
-// INFORMADO UM N⁄MERO V¡LIDO
+// QUANTIDADE DE ALUNOS E N√ÉO PERMITIR REALIZAR NADA AT√â SER
+// INFORMADO UM N√öMERO V√ÅLIDO
 
 // SE FOR DIGITADO A NOTA MENOR QUE 0 OU MAIOR QUE 10,
-// INFORMAR O USU¡RIO E SOLICITAR PARA QUE SEJA INFORMADO
+// INFORMAR O USU√ÅRIO E SOLICITAR PARA QUE SEJA INFORMADO
 // A NOTA NOVAMENTE
 
 // SE OBTER 7,0 PONTOS OU MAIS - ESCREVER: "APROVADO!!! :-)"
 // SE OBTER 3,0 PONTOS OU MENOS - ESCREVER: "REPROVADO!!! :-("
-// SEN√ÉO - ESCREVER: "EM EXAME!!! :-("
+// SEN√É∆íO - ESCREVER: "EM EXAME!!! :-("
 
 // RESULTADO:
 
 // ESCREVER OS NOMES DOS(AS) ALUNOS(AS), COM AS SUAS NOTAS E
-// SE FORAM APROVADOS OU N√O
+// SE FORAM APROVADOS OU N√ÉO
 
 Var
 // Vari√°veis
@@ -39,7 +39,7 @@ Var
    Vet_Situacao  : Vetor [0..29] de Caractere
 
 Inicio
-// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
+// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
    escreva("Informe a Quantidade de Alunos: ")
    leia(N)
    
@@ -138,8 +138,8 @@ Inicio
    
    para i de 0 ate N - 1 faca
      escreval("Aluno(a) ", i + 1, ": ", Vet_Nome_Aluno[i])
-     escreval("MÈdia      : ", Vet_Media[i]:2:1)
-     escreval("SituaÁ„o   : ", Vet_Situacao[i])
+     escreval("M√©dia      : ", Vet_Media[i]:2:1)
+     escreval("Situa√ß√£o   : ", Vet_Situacao[i])
      escreval
    fimpara
 Fimalgoritmo
