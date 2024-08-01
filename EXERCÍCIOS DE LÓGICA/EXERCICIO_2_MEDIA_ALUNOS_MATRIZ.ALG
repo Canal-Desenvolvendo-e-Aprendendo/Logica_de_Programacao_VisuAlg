@@ -2,10 +2,10 @@ Algoritmo "Exercicio_2_Media_Alunos_Matriz"
 
 // EXERCÕCIO 2 - MATRIZ
 
-// CRIAR UM ALGORITMO QUE REALIZE A M…DIA DE V¡RIOS ALUNOS(AS) QUE
+// CRIAR UM ALGORITMO QUE REALIZE A M…DIA DE V¡RIOS ALUNOS QUE
 // TER√O 4 NOTAS (CADA UM)
 
-// A QUANTIDADE DE ALUNOS POR TURMA SER¡ NO M¡XIMO 30, CASO PASSAR
+// A QUANTIDADE DE ALUNOS POR TURMA SER√OÅNO M¡XIMO 30, CASO PASSAR
 // DESTE VALOR, SOLICITAR PARA QUE SEJA INFORMADO NOVAMENTE A
 // QUANTIDADE DE ALUNOS E N√O PERMITIR REALIZAR NADA AT… SER
 // INFORMADO UM N⁄MERO V¡LIDO
@@ -16,7 +16,7 @@ Algoritmo "Exercicio_2_Media_Alunos_Matriz"
 
 // SE OBTER 7,0 PONTOS OU MAIS - ESCREVER: "APROVADO!!! :-)"
 // SE OBTER 3,0 PONTOS OU MENOS - ESCREVER: "REPROVADO!!! :-("
-// SEN√O - ESCREVER: "EM EXAME!!! :-("
+// SEN√ÉO - ESCREVER: "EM EXAME!!! :-("
 
 // RESULTADO:
 
@@ -25,78 +25,71 @@ Algoritmo "Exercicio_2_Media_Alunos_Matriz"
 
 Var
 // Vari·veis
-   i, j, N       : Inteiro
-   
-// Matrizes
-   Mat_Nota      : Vetor [0..29, 0..3] de Real
+   i, j, N:        Inteiro
 
-// Vetores
-   Vet_Soma      : Vetor [0..29] de Real
-   Vet_Media     : Vetor [0..29] de Real
+// Matrizes
+   Mat_Notas:      Vetor [0..29, 0..3] de Real
    
+// Vetores
+   Vet_Soma :      Vetor [0..3]  de Real
+   Vet_Media:      Vetor [0..29] de Real
+   
+   Vet_Situacao:   Vetor [0..29] de Caractere
    Vet_Nome_Aluno: Vetor [0..29] de Caractere
-   Vet_Situacao  : Vetor [0..29] de Caractere
 
 Inicio
-// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc... 
+// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
    escreva("Informe a Quantidade de Alunos: ")
    leia(N)
-   
+
    escreval
-   
-   enquanto ((N < 0) ou (N > 30)) faca
-     escreval("Quantidade Inv·lida de Alunos!")
+
+   enquanto (N > 30) faca
+     escreval("Quantidade Inv·lida de Alunos!!!")
      escreva("Informe novamente a Quantidade de Alunos: ")
      leia(N)
-     
+       
      escreval
    fimenquanto
 
    para i de 0 ate N - 1 faca
-     // NOME DO ALUNO
-     escreva("Informe o Nome do(a) Aluno(a) ", i + 1, ": ")
+     escreva("Informe o Nome do Aluno ", i + 1 , ": ")
      leia(Vet_Nome_Aluno[i])
 
      escreval
-
+     
      para j de 0 ate 3 faca
-        // NOTAS
-        escreva("Informe a Nota ", j + 1, ": ")
-        leia(Mat_Nota[i, j])
+        escreva("Nota  ", j + 1, ": ")
+        leia(Mat_Notas[i, j])
         
-        escreval
-
-        enquanto ((Mat_Nota[i, j]< 0) ou (Mat_Nota[i, j] > 10)) faca
-          escreval("Nota Inv·lida!")
-          escreva("Informe novamente a Nota ", j + 1, ": ")
-          leia(Mat_Nota[i, j])
-
-          escreval
+        enquanto ((Mat_Notas[i, j] < 0) ou (Mat_Notas[i, j] > 10)) faca
+          escreva("Nota Inv·lida! ")
+          escreva("Nota  ", j + 1, ": ")
+          leia(Mat_Notas[i, j])
         fimenquanto
      fimpara
      
      escreval
    fimpara
-   
-   para i de 0 ate N - 1 faca
-     para j de 0 ate 3 faca
-        Vet_Soma[i]  <- Vet_Soma[i] + Mat_Nota[i, j]
-     fimpara
-     
-     // M…DIA
-     Vet_Media[i] <- Vet_Soma[i] / 4
-     
-     se (Vet_Media[i] >= 7) entao
-       Vet_Situacao[i] <- "APROVADO!!! :-)"
-     senao
-       se (Vet_Media[i] <= 3) entao
-         Vet_Situacao[i] <- "REPROVADO!!! :-("
-       senao
-         Vet_Situacao[i] <- "EM EXAME!!! :-("
-       fimse
-     fimse
-   fimpara
 
+   para i de 0 ate N - 1 faca
+      para j de 0 ate 3 faca
+        Vet_Soma[i] <- Vet_Soma[i] + Mat_Notas[i, j]
+      fimpara
+      
+      Vet_Media[i] <- Vet_Soma[i] / 4
+
+      se (Vet_Media[i] >= 7) entao
+         Vet_Situacao[i] <- "APROVADO(A)!!! :-)"
+      senao
+         se (Vet_Media[i] < 3) entao
+           Vet_Situacao[i] <- "REPROVADO(A)!!! :-("
+         senao
+           Vet_Situacao[i] <- "EM EXAME!!! :-("
+         fimse
+      fimse
+   fimpara
+   
    escreval
    escreval("RESULTADO FINAL")
    escreval
@@ -107,4 +100,5 @@ Inicio
      escreval("SituaÁ„o   : ", Vet_Situacao[i])
      escreval
    fimpara
+
 Fimalgoritmo
