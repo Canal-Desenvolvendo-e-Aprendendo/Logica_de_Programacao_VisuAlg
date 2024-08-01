@@ -25,16 +25,16 @@ Algoritmo "Exercicio_2_Media_Alunos_Matriz"
 
 Var
 // Variáveis
-   i, j, N:        Inteiro
+   i, j, N       : Inteiro
 
 // Matrizes
-   Mat_Notas:      Vetor [0..29, 0..3] de Real
+   Mat_Notas     : Vetor [0..29, 0..3] de Real
    
 // Vetores
-   Vet_Soma :      Vetor [0..3]  de Real
-   Vet_Media:      Vetor [0..29] de Real
+   Vet_Soma      : Vetor [0..3]  de Real
+   Vet_Media     : Vetor [0..29] de Real
    
-   Vet_Situacao:   Vetor [0..29] de Caractere
+   Vet_Situacao  : Vetor [0..29] de Caractere
    Vet_Nome_Aluno: Vetor [0..29] de Caractere
 
 Inicio
@@ -64,7 +64,7 @@ Inicio
         
         enquanto ((Mat_Notas[i, j] < 0) ou (Mat_Notas[i, j] > 10)) faca
           escreva("Nota Inválida! ")
-          escreva("Nota  ", j + 1, ": ")
+          escreva("Informe novamente a Nota  ", j + 1, ": ")
           leia(Mat_Notas[i, j])
         fimenquanto
      fimpara
@@ -77,6 +77,7 @@ Inicio
         Vet_Soma[i] <- Vet_Soma[i] + Mat_Notas[i, j]
       fimpara
       
+      // MÉDIA
       Vet_Media[i] <- Vet_Soma[i] / 4
 
       se (Vet_Media[i] >= 7) entao
