@@ -61,7 +61,7 @@ Inicio
 
      para j de 0 ate 3 faca
        // MATRIZ DE NOTAS
-        escreva("Nota  ", j + 1, ": ")
+        escreva("Informe a Nota  ", j + 1, ": ")
         leia(Mat_Notas[i, j])
         
         enquanto ((Mat_Notas[i, j] < 0) ou (Mat_Notas[i, j] > 10)) faca
