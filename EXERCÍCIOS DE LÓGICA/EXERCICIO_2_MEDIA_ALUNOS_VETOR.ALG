@@ -5,7 +5,7 @@ Algoritmo "Exercicio_2_Media_Alunos_Vetor"
 // CRIAR UM ALGORITMO QUE REALIZE A M…DIA DE V¡RIOS ALUNOS QUE
 // TER√O 4 NOTAS (CADA UM)
 
-// A QUANTIDADE DE ALUNOS POR TURMA SER√OÅNO M¡XIMO 30, CASO PASSAR
+// A QUANTIDADE DE ALUNOS POR TURMA SER√O NO M¡XIMO 30, CASO PASSAR
 // DESTE VALOR, SOLICITAR PARA QUE SEJA INFORMADO NOVAMENTE A
 // QUANTIDADE DE ALUNOS E N√O PERMITIR REALIZAR NADA AT… SER
 // INFORMADO UM N⁄MERO V¡LIDO
@@ -16,7 +16,7 @@ Algoritmo "Exercicio_2_Media_Alunos_Vetor"
 
 // SE OBTER 7,0 PONTOS OU MAIS - ESCREVER: "APROVADO!!! :-)"
 // SE OBTER 3,0 PONTOS OU MENOS - ESCREVER: "REPROVADO!!! :-("
-// SEN√ÉO - ESCREVER: "EM EXAME!!! :-("
+// SEN√O - ESCREVER: "EM EXAME!!! :-("
 
 // RESULTADO:
 
@@ -24,7 +24,7 @@ Algoritmo "Exercicio_2_Media_Alunos_Vetor"
 // SE FORAM APROVADOS OU N√O
 
 Var
-// Vari√°veis
+// Vari·veis
    i, N          : Inteiro
 
 // Vetores
@@ -39,14 +39,14 @@ Var
    Vet_Situacao  : Vetor [0..29] de Caractere
 
 Inicio
-// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
+// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
    escreva("Informe a Quantidade de Alunos: ")
    leia(N)
    
    escreval
    
    enquanto ((N < 0) ou (N > 30)) faca
-     escreval("Quantidade Inv√°lida de Alunos!")
+     escreval("Quantidade Inv·lida de Alunos!")
      escreva("Informe novamente a Quantidade de Alunos: ")
      leia(N)
      
@@ -67,7 +67,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota1[i] < 0) ou (Vet_Nota1[i] > 10)) faca
-       escreval("Nota 1 Inv√°lida!")
+       escreval("Nota 1 Inv·lida!")
        escreva("Informe novamente a Nota 1: ")
        leia(Vet_Nota1[i])
 
@@ -81,7 +81,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota2[i] < 0) ou (Vet_Nota2[i] > 10)) faca
-       escreval("Nota 2 Inv√°lida!")
+       escreval("Nota 2 Inv·lida!")
        escreva("Informe novamente a Nota 2: ")
        leia(Vet_Nota2[i])
 
@@ -95,7 +95,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota3[i] < 0) ou (Vet_Nota3[i] > 10)) faca
-       escreval("Nota 3 Inv√°lida!")
+       escreval("Nota 3 Inv·lida!")
        escreva("Informe novamente a Nota 3: ")
        leia(Vet_Nota3[i])
 
@@ -109,7 +109,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota4[i] < 0) ou (Vet_Nota4[i] > 10)) faca
-       escreval("Nota 4 Inv√°lida!")
+       escreval("Nota 4 Inv·lida!")
        escreva("Informe novamente a Nota 4: ")
        leia(Vet_Nota4[i])
 
