@@ -26,25 +26,20 @@ Var
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
-   Count <- 0
-
    para Count de 0 ate 10 faca
      escreval
      escreval("------- TABUADA DO", Count, " -------")
      escreval
-     
-   
+
      para i de 0 ate 10 faca
        Resultado <- Count * i
 
        se (i < 10) entao
-         escreval("       ", Count, " x", i, "  = ", Resultado)
+         escreval("        ", Count, " x", i, "  = ", Resultado)
        senao
-         escreval("       ", Count, " x", i, " = ", Resultado)
+         escreval("        ", Count, " x", i, " = ", Resultado)
        fimse
      fimpara
-     
-     Count <- Count + 1
    fimpara
 
 Fimalgoritmo
