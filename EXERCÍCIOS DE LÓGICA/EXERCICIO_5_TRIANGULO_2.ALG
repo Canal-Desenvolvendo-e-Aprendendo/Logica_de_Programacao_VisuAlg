@@ -1,16 +1,17 @@
 Algoritmo "Exercicio_5_Triangulo_2"
 
-// EXERCÍCIO 5 - TRIÂNGULO
+// EXERCï¿½CIO 5 - TRIï¿½NGULO
 
 // CRIAR UM ALGORITMO QUE LEIA OS 3 VALORES, VERIFICAR
-// SE É UM TRIÂNGULO, CASO FOR, INFORMAR SE É UM TRIÂNGULO
-// ISÓSCELES, EQUILÁTERO OU ESCALENO E SEU PERÍMETRO, COM ATÉ
-// 2 CASAS DECIMAIS.
+// SE ï¿½ UM TRIï¿½NGULO, CASO FOR, INFORMAR SE ï¿½ UM TRIï¿½NGULO
+// ISï¿½SCELES, EQUILï¿½TERO OU ESCALENO E TODOS DEVEM
+// INFORMAR O SEU PERï¿½METRO, COM ATï¿½ 2 CASAS DECIMAIS.
 
-// OBS: REALIZAR ESTA VERIFICAÇÃO 5 VEZES
+// OBS: REALIZAR ESTA VERIFICAï¿½ï¿½O 5 VEZES E, CASO Nï¿½O SEJA UM
+// TRIï¿½NGULO, O PERï¿½METRO DEVE VIR COM O VALOR 0.00
 
 Var
-// Variáveis
+// Variï¿½veis
    i            : Inteiro
 
 // Vetores
@@ -22,31 +23,30 @@ Var
    Vet_Tipo_Tri : Vetor [0..4] de Caractere
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
+// Seï¿½ï¿½o de Comandos, procedimento, funï¿½ï¿½es, operadores, etc...
    para i de 0 ate 4 faca
      escreva("Informe o Tamanho do Lado A: ")
      leia(Vet_A[i])
-   
+
      escreva("Informe o Tamanho do Lado B: ")
      leia(Vet_B[i])
-   
+
      escreva("Informe o Tamanho do Lado C: ")
      leia(Vet_C[i])
-   
+
      escreval
-   
+
      se ((Vet_A[i] > (Vet_B[i] + Vet_C[i])) ou (Vet_B[i] > (Vet_A[i] + Vet_C[i])) ou (Vet_C[i] > (Vet_A[i] + Vet_B[i]))) entao
-        Vet_Tipo_Tri[i]  <- "Não é um Triângulo!!! :-("
+        Vet_Tipo_Tri[i]  <- "Nï¿½o ï¿½ um Triï¿½ngulo!!! :-("
         Vet_Perimetro[i] <- 0.00
      senao
-       se ((Vet_A[i] = Vet_B[i]) e (Vet_A[i] = Vet_C[i])) então
-         Vet_Tipo_Tri[i] <- "Triângulo Equilátero!!! :-)"
+       se ((Vet_A[i] = Vet_B[i]) e (Vet_A[i] = Vet_C[i])) entï¿½o
+         Vet_Tipo_Tri[i] <- "Triï¿½ngulo Equilï¿½tero!!! :-)"
        senao
          se ((Vet_A[i] = Vet_B[i]) ou (Vet_A[i] = Vet_C[i]) ou (Vet_B[i] = Vet_C[i])) entao
-           Vet_Tipo_Tri[i] <- "Triângulo Isósceles!!! :-)"
-           escreval()
+           Vet_Tipo_Tri[i] <- "Triï¿½ngulo Isï¿½sceles!!! :-)"
          senao
-           Vet_Tipo_Tri[i] <- "Triângulo Escaleno!!! :-)"
+           Vet_Tipo_Tri[i] <- "Triï¿½ngulo Escaleno!!! :-)"
          fimse
        fimse
 
@@ -56,14 +56,14 @@ Inicio
    
    para i de 0 ate 4 faca
      escreval
-     escreva("É um Triângulo? = ")
+     escreva(i + 1, "ï¿½ - ï¿½ um Triï¿½ngulo? ")
      
-     se (Vet_Tipo_Tri[i]  <> "Não é um Triângulo!!! :-(") entao
-        escreval("Sim! É um ", Vet_Tipo_Tri[i])
+     se (Vet_Tipo_Tri[i] <> "Nï¿½o ï¿½ um Triï¿½ngulo!!! :-(") entao
+       escreval("Sim! ï¿½ um ", Vet_Tipo_Tri[i])
      senao
-        escreval(Vet_Tipo_Tri[i])
+       escreval(Vet_Tipo_Tri[i])
      fimse
-     
-     escreval("Perímetro       = ", Vet_Perimetro[i]:2:2)
+
+     escreval("      Perï¿½metro = ", Vet_Perimetro[i]:2:2)
    fimpara
 Fimalgoritmo

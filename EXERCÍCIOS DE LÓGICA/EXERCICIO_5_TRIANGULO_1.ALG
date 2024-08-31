@@ -40,6 +40,6 @@ Inicio
      Perimetro <- A + B + C
      
      escreval
-     escreval("Perímetro =", Perimetro)
+     escreval("Perímetro =", Perimetro:2:2)
    fimse
 Fimalgoritmo
