@@ -51,26 +51,32 @@ Inicio
    
    // Sequência Crescente
    Vet_Seq_Crescente[0] <- Menor
-   
-   para i de 0 ate 2 faca
-     se ((Vet_Numero[i] >= Menor) e (Vet_Numero[i] <= Maior)) entao
-       Vet_Seq_Crescente[1] <- Vet_Numero[i]
-     fimse
-   fimpara
-   
    Vet_Seq_Crescente[2] <- Maior
    
-   // Sequência Decrescente
-   Vet_Seq_Decrescente[0] <- Maior
-
    para i de 0 ate 2 faca
-     se ((Vet_Numero[i] >= Menor) e (Vet_Numero[i] <= Maior)) entao
-       Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+     se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) entao
+       Vet_Seq_Crescente[1] <- Vet_Numero[i]
+     senao
+        se ((Vet_Numero[i] <= Menor) e (Vet_Numero[i] >= Maior)) entao
+          Vet_Seq_Crescente[1] <- Vet_Numero[i]
+        fimse
      fimse
    fimpara
 
+   // Sequência Decrescente
+   Vet_Seq_Decrescente[0] <- Maior
    Vet_Seq_Decrescente[2] <- Menor
    
+   para i de 0 ate 2 faca
+     se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) entao
+       Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+     senao
+        se ((Vet_Numero[i] <= Menor) e (Vet_Numero[i] >= Maior)) entao
+          Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+        fimse
+     fimse
+   fimpara
+
    // Soma
    Soma <- Vet_Numero[0] + Vet_Numero[1] + Vet_Numero[2]
    
@@ -86,13 +92,19 @@ Inicio
    
    escreval
    escreva("1 - SEQUÊNCIA CRESCENTE  :")
-   escreva(Vet_Seq_Crescente[0], " - ", Vet_Seq_Crescente[1])
-   escreval(" - ", Vet_Seq_Crescente[2])
    
+   para i de 0 ate 2 faca
+     escreva(Vet_Seq_Crescente[i], " ")
+   fimpara
+
+   escreval
    escreva("2 - SEQUÊNCIA DECRESCENTE:")
-   escreva(Vet_Seq_Decrescente[0], " - ", Vet_Seq_Decrescente[1])
-   escreval(" - ", Vet_Seq_Decrescente[2])
    
+   para i de 0 ate 2 faca
+     escreva(Vet_Seq_Decrescente[i], " ")
+   fimpara
+   
+   escreval
    escreval("3 - MAIOR NÚMERO         :", Maior)
    escreval("4 - MENOR NÚMERO         :", Menor)
    escreval("5 - SOMA DOS 3           :", Soma)
