@@ -46,7 +46,7 @@ Inicio
    escreval
    
    enquanto ((N < 0) ou (N > 30)) faca
-     escreval("Quantidade Invï¿½lida de Alunos!")
+     escreval("Quantidade Inválida de Alunos!")
      escreva("Informe novamente a Quantidade de Alunos: ")
      leia(N)
      
@@ -67,7 +67,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota1[i] < 0) ou (Vet_Nota1[i] > 10)) faca
-       escreval("Nota 1 Invï¿½lida!")
+       escreval("Nota 1 Inválida!")
        escreva("Informe novamente a Nota 1: ")
        leia(Vet_Nota1[i])
 
@@ -81,7 +81,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota2[i] < 0) ou (Vet_Nota2[i] > 10)) faca
-       escreval("Nota 2 Invï¿½lida!")
+       escreval("Nota 2 Inválida!")
        escreva("Informe novamente a Nota 2: ")
        leia(Vet_Nota2[i])
 
@@ -95,7 +95,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota3[i] < 0) ou (Vet_Nota3[i] > 10)) faca
-       escreval("Nota 3 Invï¿½lida!")
+       escreval("Nota 3 Inválida!")
        escreva("Informe novamente a Nota 3: ")
        leia(Vet_Nota3[i])
 
@@ -109,7 +109,7 @@ Inicio
      escreval
 
      enquanto ((Vet_Nota4[i] < 0) ou (Vet_Nota4[i] > 10)) faca
-       escreval("Nota 4 Invï¿½lida!")
+       escreval("Nota 4 Inválida!")
        escreva("Informe novamente a Nota 4: ")
        leia(Vet_Nota4[i])
 
@@ -138,8 +138,8 @@ Inicio
    
    para i de 0 ate N - 1 faca
      escreval("Aluno(a) ", i + 1, ": ", Vet_Nome_Aluno[i])
-     escreval("MÃ©dia      : ", Vet_Media[i]:2:1)
-     escreval("SituaÃ§Ã£o   : ", Vet_Situacao[i])
+     escreval("Média      : ", Vet_Media[i]:2:1)
+     escreval("Situação   : ", Vet_Situacao[i])
      escreval
    fimpara
 Fimalgoritmo
