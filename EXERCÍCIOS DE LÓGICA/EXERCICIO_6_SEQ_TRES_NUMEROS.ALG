@@ -31,41 +31,53 @@ Inicio
    
    // MAIOR
    Maior <- Vet_Numero[0]
-   
-   para i de 1 ate 2 faca
-     se (Maior < Vet_Numero[i]) entao
-       Maior <- Vet_Numero[i]
-     fimse
-   fimpara
+
+   se ((Maior <> Vet_Numero[1]) e (Maior <> Vet_Numero[2])) entao
+     para i de 1 ate 2 faca
+       se (Maior < Vet_Numero[i]) entao
+         Maior <- Vet_Numero[i]
+       fimse
+     fimpara
+   fimse
    
    // MENOR
    Menor <- Vet_Numero[0]
    
-   para i de 1 ate 2 faca
-     se (Menor > Vet_Numero[i]) entao
-       Menor <- Vet_Numero[i]
-     fimse
-   fimpara
+   se ((Menor <> Vet_Numero[1]) e (Menor <> Vet_Numero[2])) entao
+     para i de 1 ate 2 faca
+       se (Menor > Vet_Numero[i]) entao
+         Menor <- Vet_Numero[i]
+       fimse
+     fimpara
+   fimse
    
    // SEQUÊNCIA CRESCENTE
    Vet_Seq_Crescente[0] <- Menor
    Vet_Seq_Crescente[2] <- Maior
-   
-   para i de 0 ate 2 faca
-     se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) ou ((Vet_Numero[i] <= Menor) e (Vet_Numero[i] >= Maior)) entao
-       Vet_Seq_Crescente[1] <- Vet_Numero[i]
-     fimse
-   fimpara
+
+   se ((Vet_Numero[i] = Menor) e (Vet_Numero[i] = Maior)) entao
+     Vet_Seq_Crescente[1] <- Vet_Numero[i]
+   senao
+     para i de 0 ate 2 faca
+       se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) entao
+         Vet_Seq_Crescente[1] <- Vet_Numero[i]
+       fimse
+     fimpara
+   fimse
 
    // SEQUÊNCIA DECRESCENTE
    Vet_Seq_Decrescente[0] <- Maior
    Vet_Seq_Decrescente[2] <- Menor
 
-   para i de 0 ate 2 faca
-     se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) ou ((Vet_Numero[i] <= Menor) e (Vet_Numero[i] >= Maior)) entao
-       Vet_Seq_Decrescente[1] <- Vet_Numero[i]
-     fimse
-   fimpara
+   se ((Vet_Numero[i] = Menor) e (Vet_Numero[i] = Maior)) entao
+     Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+   senao
+     para i de 0 ate 2 faca
+       se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) entao
+         Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+       fimse
+     fimpara
+   fimse
    
    //SOMA DOS 3
    Soma <- 0
@@ -82,7 +94,11 @@ Inicio
    fimpara
 
    // MÉDIA DOS 3
-   Media <- Soma / 3
+   se ((Vet_Numero[i] = Menor) e (Vet_Numero[i] = Maior)) entao
+     Media <- Vet_Numero[i]
+   senao
+      Media <- Soma / 3
+   fimse
    
    // RESULTADO
    escreval
