@@ -15,6 +15,8 @@ Algoritmo "Exercicio_6_Seq_Tres_Numeros"
 Var
 // Variáveis
    i, Maior, Menor, Soma, Multiplicacao: Inteiro
+   PosicaoMaior, PosicaoMenor          : Inteiro
+   TodosIguais, IgualMaior, IgualMenor : Logico
    Media                               : Real
 
 // Vetores
@@ -28,14 +30,21 @@ Inicio
      escreva("Informe o", i + 1, "º Número: ")
      leia(Vet_Numero[i])
    fimpara
-   
+
+   // NÚMEROS IGUAIS
+   TodosIguais <- ((Vet_Numero[0] = Vet_Numero[1]) e (Vet_Numero[0] = Vet_Numero[2]))
+
    // MAIOR
    Maior <- Vet_Numero[0]
 
-   se ((Maior <> Vet_Numero[1]) e (Maior <> Vet_Numero[2])) entao
+   se (TodosIguais) entao
+     Maior        <- Vet_Numero[0]
+     PosicaoMaior <- 0
+   senao
      para i de 1 ate 2 faca
        se (Maior < Vet_Numero[i]) entao
          Maior <- Vet_Numero[i]
+         PosicaoMaior <- i
        fimse
      fimpara
    fimse
@@ -43,40 +52,60 @@ Inicio
    // MENOR
    Menor <- Vet_Numero[0]
    
-   se ((Menor <> Vet_Numero[1]) e (Menor <> Vet_Numero[2])) entao
+   se (TodosIguais)  entao
+     Menor        <- Vet_Numero[0]
+     PosicaoMenor <- 0
+   senao
      para i de 1 ate 2 faca
        se (Menor > Vet_Numero[i]) entao
-         Menor <- Vet_Numero[i]
+         Menor        <- Vet_Numero[i]
+         PosicaoMenor <- i
        fimse
      fimpara
    fimse
    
+   // NÚMEROS REPETIDOS
+   para i de 0 ate 2 faca
+     se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
+       IgualMaior <- ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] = Maior))
+       IgualMenor <- ((Vet_Numero[i] = Menor) e (Vet_Numero[i] <> Maior))
+     fimse
+   fimpara
+
    // SEQUÊNCIA CRESCENTE
    Vet_Seq_Crescente[0] <- Menor
    Vet_Seq_Crescente[2] <- Maior
 
-   se ((Vet_Numero[i] = Menor) e (Vet_Numero[i] = Maior)) entao
-     Vet_Seq_Crescente[1] <- Vet_Numero[i]
+   se (TodosIguais) ou (IgualMenor)  entao
+     Vet_Seq_Crescente[1] <- Menor
    senao
-     para i de 0 ate 2 faca
-       se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) entao
-         Vet_Seq_Crescente[1] <- Vet_Numero[i]
-       fimse
-     fimpara
+     se (IgualMaior) entao
+        Vet_Seq_Crescente[1] <- Maior
+     senao
+       para i de 0 ate 2 faca
+         se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
+           Vet_Seq_Crescente[1] <- Vet_Numero[i]
+         fimse
+       fimpara
+     fimse
    fimse
 
    // SEQUÊNCIA DECRESCENTE
    Vet_Seq_Decrescente[0] <- Maior
    Vet_Seq_Decrescente[2] <- Menor
 
-   se ((Vet_Numero[i] = Menor) e (Vet_Numero[i] = Maior)) entao
-     Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+   se (TodosIguais) ou (IgualMenor) entao
+     Vet_Seq_Decrescente[1] <- Menor
    senao
-     para i de 0 ate 2 faca
-       se ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] <> Maior)) entao
-         Vet_Seq_Decrescente[1] <- Vet_Numero[i]
-       fimse
-     fimpara
+     se (IgualMaior) entao
+        Vet_Seq_Decrescente[1] <- Maior
+     senao
+       para i de 0 ate 2 faca
+         se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
+           Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+         fimse
+       fimpara
+     fimse
    fimse
    
    //SOMA DOS 3
@@ -94,7 +123,7 @@ Inicio
    fimpara
 
    // MÉDIA DOS 3
-   se ((Vet_Numero[i] = Menor) e (Vet_Numero[i] = Maior)) entao
+   se (TodosIguais) entao
      Media <- Vet_Numero[i]
    senao
       Media <- Soma / 3
