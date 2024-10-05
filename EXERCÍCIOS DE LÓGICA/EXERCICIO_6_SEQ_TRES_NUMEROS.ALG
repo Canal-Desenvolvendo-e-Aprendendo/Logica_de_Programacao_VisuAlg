@@ -16,7 +16,8 @@ Var
 // Variáveis
    i, Maior, Menor, Soma, Multiplicacao: Inteiro
    PosicaoMaior, PosicaoMenor          : Inteiro
-   TodosIguais, IgualMaior, IgualMenor : Logico
+   TodosIguais, TodosDiferentes        : Logico
+   IgualMaior, IgualMenor              : Logico
    Media                               : Real
 
 // Vetores
@@ -30,32 +31,29 @@ Inicio
      escreva("Informe o", i + 1, "º Número: ")
      leia(Vet_Numero[i])
    fimpara
-
-   // NÚMEROS IGUAIS
-   TodosIguais <- ((Vet_Numero[0] = Vet_Numero[1]) e (Vet_Numero[0] = Vet_Numero[2]))
+   
+   // NÚMEROS IGUAIS / DIFERENTES
+   TodosIguais     <- ((Vet_Numero[0] = Vet_Numero[1]) e (Vet_Numero[0] = Vet_Numero[2]))
+   TodosDiferentes <- ((Vet_Numero[0] <> Vet_Numero[1]) e (Vet_Numero[0] <> Vet_Numero[2]) e (Vet_Numero[1] <> Vet_Numero[2]))
 
    // MAIOR
-   Maior <- Vet_Numero[0]
-
-   se (TodosIguais) entao
-     Maior        <- Vet_Numero[0]
-     PosicaoMaior <- 0
-   senao
+   Maior        <- Vet_Numero[0]
+   PosicaoMaior <- 0
+  
+   se (nao(TodosIguais)) entao
      para i de 1 ate 2 faca
        se (Maior < Vet_Numero[i]) entao
-         Maior <- Vet_Numero[i]
+         Maior        <- Vet_Numero[i]
          PosicaoMaior <- i
        fimse
      fimpara
    fimse
-   
+
    // MENOR
-   Menor <- Vet_Numero[0]
-   
-   se (TodosIguais)  entao
-     Menor        <- Vet_Numero[0]
-     PosicaoMenor <- 0
-   senao
+   Menor        <- Vet_Numero[0]
+   PosicaoMenor <- 0
+
+   se (nao(TodosIguais)) entao
      para i de 1 ate 2 faca
        se (Menor > Vet_Numero[i]) entao
          Menor        <- Vet_Numero[i]
@@ -64,27 +62,29 @@ Inicio
      fimpara
    fimse
    
-   // NÚMEROS REPETIDOS
-   para i de 0 ate 2 faca
-     se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
-       IgualMaior <- ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] = Maior))
-       IgualMenor <- ((Vet_Numero[i] = Menor) e (Vet_Numero[i] <> Maior))
-     fimse
-   fimpara
-
+   // NÚMEROS REPETITIVOS
+   se ((nao(TodosIguais)) e (nao(TodosDiferentes))) entao
+     para i de 0 ate 2 faca
+       se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
+         IgualMaior <- ((Vet_Numero[i] <> Menor) e (Vet_Numero[i] = Maior))
+         IgualMenor <- ((Vet_Numero[i] = Menor) e (Vet_Numero[i] <> Maior))
+       fimse
+     fimpara
+   fimse
+   
    // SEQUÊNCIA CRESCENTE
    Vet_Seq_Crescente[0] <- Menor
    Vet_Seq_Crescente[2] <- Maior
 
-   se (TodosIguais) ou (IgualMenor)  entao
+   se ((TodosIguais) ou (IgualMenor)) entao
      Vet_Seq_Crescente[1] <- Menor
    senao
      se (IgualMaior) entao
-        Vet_Seq_Crescente[1] <- Maior
+       Vet_Seq_Crescente[1] <- Maior
      senao
        para i de 0 ate 2 faca
          se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
-           Vet_Seq_Crescente[1] <- Vet_Numero[i]
+            Vet_Seq_Crescente[1] <- Vet_Numero[i]
          fimse
        fimpara
      fimse
@@ -94,15 +94,15 @@ Inicio
    Vet_Seq_Decrescente[0] <- Maior
    Vet_Seq_Decrescente[2] <- Menor
 
-   se (TodosIguais) ou (IgualMenor) entao
+   se ((TodosIguais) ou (IgualMenor)) entao
      Vet_Seq_Decrescente[1] <- Menor
    senao
      se (IgualMaior) entao
-        Vet_Seq_Decrescente[1] <- Maior
+       Vet_Seq_Decrescente[1] <- Maior
      senao
        para i de 0 ate 2 faca
          se ((PosicaoMaior <> i) e (PosicaoMenor <> i)) entao
-           Vet_Seq_Decrescente[1] <- Vet_Numero[i]
+            Vet_Seq_Decrescente[1] <- Vet_Numero[i]
          fimse
        fimpara
      fimse
