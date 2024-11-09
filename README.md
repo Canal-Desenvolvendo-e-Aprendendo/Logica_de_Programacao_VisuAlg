@@ -1,3 +1,7 @@
+![Capa GitHub](https://github.com/user-attachments/assets/f95bd099-6b8d-4fb7-b8b3-92d1c0d71ec1)
+
+
+
 # 😉 Olá pessoal!!! Sou Dev Jess.
 
 
@@ -11,6 +15,6 @@
 
 - 💻 Não deixem de conferir!!
 
-- 💻 Toda Sexta às 20:00 haverá sempre um vídeo novo no Canal.
+- 💻 Obs: Devido estar trabalhando e ter somente o final de semana para montar os Conteúdos, gravar e editar os Vídeos, terá Vídeo Uma Sexta-feira por mês às 20:30, por isso não deixem de se inscrever e ativar as notificações para sempre ficar sabendo quando será postado o próximo Vídeo.
   
 
