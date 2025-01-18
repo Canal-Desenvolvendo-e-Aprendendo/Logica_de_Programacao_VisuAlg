@@ -15,6 +15,6 @@
 
 - 💻 Não deixem de conferir!!
 
-- 💻 Obs: Devido estar trabalhando e ter somente o final de semana para montar os Conteúdos, gravar e editar os Vídeos, terá Vídeo Uma Sexta-feira por mês às 20:30, por isso não deixem de se inscrever e ativar as notificações para sempre ficar sabendo quando será postado o próximo Vídeo.
+- 💻 Vídeos - Sexta-feira 20:30.
   
 
