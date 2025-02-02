@@ -1,4 +1,4 @@
-![Capa GitHub](https://github.com/user-attachments/assets/f95bd099-6b8d-4fb7-b8b3-92d1c0d71ec1)
+
 
 
 
