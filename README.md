@@ -1,5 +1,5 @@
 
-
+![Capa GitHub do Canal de skincare delicado rose branco banner para youtube](https://github.com/user-attachments/assets/9e3d9089-5559-4622-9131-77a819b8c366)
 
 
 # 😉 Olá pessoal!!! Sou Dev Jess.
@@ -16,5 +16,5 @@
 - 💻 Não deixem de conferir!!
 
 - 💻 Vídeos - Sexta-feira 20:30.
-  
+
 
