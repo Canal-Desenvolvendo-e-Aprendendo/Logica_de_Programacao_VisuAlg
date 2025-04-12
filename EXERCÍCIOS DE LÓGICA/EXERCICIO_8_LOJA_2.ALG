@@ -1,35 +1,35 @@
 Algoritmo "Exercicio_8_Loja_2"
 
-// EXERC√çCIO 8 - LOJA 2
+// EXERCÌCIO 8 - LOJA 2
 
-// CRIAR UM ALGORITMO QUE LEIA O NOME, O PREÔøΩO E A QUANTIDADE
-// DE VÔøΩRIOS PRODUTOS DE UMA MESMA COMPRA, CALCULE O VALOR TOTAL
+// CRIAR UM ALGORITMO QUE LEIA O NOME, O PRE«O E A QUANTIDADE
+// DE V¡RIOS PRODUTOS DE UMA MESMA COMPRA, CALCULE O VALOR TOTAL
 // DE CADA MERCADORIA E DA COMPRA.
 
-// OBS: DEVE PERGUNTAR INICIALMENTE QUANTOS PRODUTOS SERÔøΩO
-// COMPRADOS E SE DESEJA COMPRAR MAIS, CASO ESCOLHA "S", SERÔøΩ
-// SELECIONADO MAIS PRODUTOS E SOLICITAR NOVAMENTE A QUANTIDADE.
+// OBS: DEVE PERGUNTAR INICIALMENTE QUANTOS PRODUTOS SER√O
+// COMPRADOS E SE DESEJA COMPRAR MAIS, CASO ESCOLHA "S", SER√O
+// SELECIONADOS MAIS PRODUTOS E SOLICITAR NOVAMENTE A QUANTIDADE.
 
-// NO FINAL, DEVERÔøΩ MOSTRAR TODOS OS PRODUTOS ADICIONADOS COM O
-// PREÔøΩO, A QUANTIDADE, O TOTAL INDIVIDUAL E O TOTAL DA COMPRA.EX:
+// NO FINAL, DEVER¡ MOSTRAR TODOS OS PRODUTOS ADICIONADOS COM O
+// PRE«O, A QUANTIDADE, O TOTAL INDIVIDUAL E O TOTAL DA COMPRA.EX:
 
-// PRODUTO 1        : CALÔøΩA
-// PREÔøΩO            : R$ 50,00
+// PRODUTO 1        : CAL«A
+// PRE«O            : R$ 50,00
 // QUANTIDADE       : 2
 // TOTAL            : R$ 100,00
 
 // PRODUTO 2        : BLUSA
-// PREÔøΩO            : R$ 20,00
+// PRE«O            : R$ 20,00
 // QUANTIDADE       : 5
 // TOTAL            : R$ 100,00
 
 // PRODUTO 3        : MEIA
-// PREÔøΩO            : R$ 5,00
+// PRE«O            : R$ 5,00
 // QUANTIDADE       : 10
 // TOTAL            : R$ 50,00
 
-// PRODUTO 4        : SANDÔøΩLIA
-// PREÔøΩO            : R$ 50,00
+// PRODUTO 4        : SAND¡LIA
+// PRE«O            : R$ 50,00
 // QUANTIDADE       : 1
 // TOTAL            : R$ 50,00
 
@@ -37,36 +37,36 @@ Algoritmo "Exercicio_8_Loja_2"
 // TOTAL DA COMPRA  : R$ 300,00
 
 
-// DEPOIS, O PROGRAMA DEVERÔøΩ SOLICITAR A FORMA DE PAGAMENTO, O
+// DEPOIS, O PROGRAMA DEVER¡ SOLICITAR A FORMA DE PAGAMENTO, O
 // VALOR PAGO PELO CLIENTE, CASO SEJA EM DINHEIRO, INFORMAR SE
-// HÔøΩ OU NÔøΩO TROCO, SENÔøΩO ESCREVER "OBRIGADO(A) E VOLTE SEMPRE!:-)",
-// SE HOUVER DINHEIRO FALTANDO, DEVERÔøΩ ESCREVER "VALOR RECEBIDO
-// ÔøΩ INSUFICIENTE! :-(" E MOSTRAR QUANTO FALTA.
+// H¡ OU N√O TROCO, SEN√O ESCREVER "OBRIGADO(A) E VOLTE SEMPRE!:-)",
+// SE HOUVER DINHEIRO FALTANDO, DEVER¡ ESCREVER "VALOR RECEBIDO
+// … INSUFICIENTE! :-(" E MOSTRAR QUANTO FALTA.
 
 // NAS OUTRAS FORMAS DE PAGAMENTO, ESCREVER SOMENTE:
 // RECEBEU?: S (PARA PIX)
 // "OBRIGADO(A) E VOLTE SEMPRE!:-)".
 
-// OBS: TERÔøΩO 4 FORMAS DE PAGAMENTO:
+// OBS: TER√O 4 FORMAS DE PAGAMENTO:
 
 // -------- FORMAS DE PAGAMENTO --------
 
 // 1 - DINHEIRO
 // 2 - PIX
-// 3 - CARTÔøΩO DE DÔøΩBITO
-// 4 - CARTÔøΩO DE CRÔøΩDITO (PARCELAMENTO ATÔøΩ 3X SEM JUROS, COM
-// PARCELA MÔøΩNIMA DE R$50,00)
+// 3 - CART√O DE DEBITO
+// 4 - CART√O DE CR…DITO (PARCELAMENTO AT¡ 3X SEM JUROS, COM
+// PARCELA MÕNIMA DE R$50,00)
 
 // -------------------------------------
 
-// EXEMPLO DE PAGAMENTO COM O CARTÔøΩO DE CRÔøΩDITO:
+// EXEMPLO DE PAGAMENTO COM O CART√O DE CR…DITO:
 
-// FORMA DE PAGAMENTO: 4 - CARTÔøΩO DE CRÔøΩDITO
-// SERÔøΩ PARCELADO OU ÔøΩ VISTA?: 2
+// FORMA DE PAGAMENTO: 4 - CART√O DE CR…DITO
+// SER¡ PARCELADO OU ¿ VISTA?: 2
 
 // ----------- PARCELAMENTO ------------
 
-// 1 - ÔøΩ VISTA
+// 1 - ¿ VISTA
 // 2 - PARCELADO EM 2X
 // 3 - PARCELADO EM 3X
 
@@ -77,7 +77,7 @@ Algoritmo "Exercicio_8_Loja_2"
 
 
 Var
-// VariÔøΩveis
+// Vari·veis
 
    // Caractere
       Acrescentar, Forma_Pgto, Parcelamento, Recebeu  : Caractere
@@ -96,12 +96,12 @@ Var
    Vet_Total_Produto: Vetor [0..4] de Real
 
 Inicio
-// SeÔøΩÔøΩo de Comandos, procedimento, funÔøΩÔøΩes, operadores, etc...
+// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
    Count              <- 0
    Total_Compra       <- 0
    Qtd_Total_Produtos <- 0
    
-   escreva("Quantos Produtos serÔøΩo Adicionados ao Carrinho?: ")
+   escreva("Quantos Produtos ser„o Adicionados ao Carrinho?: ")
    leia(Qtd_Produtos_Compra)
    
    escreval
@@ -109,9 +109,9 @@ Inicio
    escreval
    
    enquanto (Qtd_Produtos_Compra <= 0) faca
-     escreval("Quantidade InvÔøΩlida!")
+     escreval("Quantidade Inv·lida!")
      
-     escreva("Digite Novamente quantos Produtos serÔøΩo ")
+     escreva("Digite Novamente quantos Produtos ser„o ")
      escreva("Adicionados ao Carrinho?: ")
      leia(Qtd_Produtos_Compra)
      
@@ -127,7 +127,7 @@ Inicio
        escreva("Produto", Count, " : ")
        leia(Vet_Nome_Produto[i])
        
-       escreva("PreÔøΩo     : R$ ")
+       escreva("PreÁo     : R$ ")
        leia(Vet_Preco_Produto[i])
        
        escreva("Quantidade: ")
@@ -153,7 +153,7 @@ Inicio
      escreval
      
      enquanto ((Acrescentar <> "S") e (Acrescentar <> "N")) faca
-       escreval("Caractere InvÔøΩlido!")
+       escreval("Caractere Inv·lido!")
 
        escreva("Digite Novamente se Deseja Acrescentar Mais ")
        escreva("Produtos no Carrinho(S/N)?: ")
@@ -165,7 +165,7 @@ Inicio
      fimenquanto
      
      se (Acrescentar = "S") entao
-       escreva("Quantos Produtos serÔøΩo Adicionados ao Carrinho?: ")
+       escreva("Quantos Produtos ser„o Adicionados ao Carrinho?: ")
        leia(Qtd_Produtos_Compra)
        
        escreval
@@ -173,9 +173,9 @@ Inicio
        escreval
        
        enquanto (Qtd_Produtos_Compra <= 0) faca
-         escreval("Quantidade InvÔøΩlida!")
+         escreval("Quantidade Inv·lida!")
 
-         escreva("Digite Novamente quantos Produtos serÔøΩo ")
+         escreva("Digite Novamente quantos Produtos ser„o ")
          escreva("Adicionados ao Carrinho?: ")
          leia(Qtd_Produtos_Compra)
 
@@ -197,9 +197,9 @@ Inicio
    escreval
    escreval("1 - DINHEIRO")
    escreval("2 - PIX")
-   escreval("3 - CARTÔøΩO DE DÔøΩBITO")
-   escreva("4 - CARTÔøΩO DE CRÔøΩDITO (PARCELAMENTO ATÔøΩ ")
-   escreval("3X SEM JUROS, COM PARCELA MÔøΩNIMA DE R$50,00)")
+   escreval("3 - CART√O DE D…BITO")
+   escreva("4 - CART√O DE CR…DITO (PARCELAMENTO AT… ")
+   escreval("3X SEM JUROS, COM PARCELA MÕNIMA DE R$50,00)")
    escreval
    escreval("-------------------------------------")
    escreval
@@ -212,7 +212,7 @@ Inicio
    escreval
    
    enquanto ((Codigo_Forma_Pgto < 1) ou (Codigo_Forma_Pgto > 4)) faca
-     escreval("CÔøΩdigo InvÔøΩlido!")
+     escreval("CÛdigo Inv·lido!")
 
      escreva("Digite Novamente a Forma de Pagamento ")
      escreva("(Digite 1, 2, 3 ou 4): ")
@@ -235,7 +235,7 @@ Inicio
        escreval
        
        enquanto (Vlr_Recebido <= 0) faca
-         escreval("Valor InvÔøΩlido!")
+         escreval("Valor Inv·lido!")
 
          escreval("Digite Novamente o Valor Recebido?: R$ ")
          leia(Vlr_Recebido)
@@ -250,7 +250,7 @@ Inicio
        se (Troco < 0) entao
          Troco <- Troco * (-1)
          
-         escreval("Valor Recebido ÔøΩ Insuficiente! :-(")
+         escreval("Valor Recebido È Insuficiente! :-(")
          escreval("Falta: R$ ", Troco:1:2)
          escreval
          escreval("-------------------------------------")
@@ -283,24 +283,24 @@ Inicio
        leia(Recebeu)
        
      Caso 3
-       Forma_Pgto <- "3 - CARTÔøΩO DE DÔøΩBITO"
+       Forma_Pgto <- "3 - CART√O DE D…BITO"
        
        escreva("O Pagamento foi Aprovado(S/N)?: ")
        leia(Recebeu)
        
      Caso 4
-       Forma_Pgto <- "4 - CARTÔøΩO DE CRÔøΩDITO (PARCELAMENTO ATÔøΩ 3X SEM JUROS, COM PARCELA MÔøΩNIMA DE R$50,00)"
+       Forma_Pgto <- "4 - CART√O DE CR…DITO (PARCELAMENTO AT… 3X SEM JUROS, COM PARCELA MÕNIMA DE R$50,00)"
 
        escreval("----------- PARCELAMENTO ------------")
        escreval
-       escreval("1 - ÔøΩ VISTA")
+       escreval("1 - ¿ VISTA")
        escreval("2 - PARCELADO EM 2X")
        escreval("3 - PARCELADO EM 3X")
        escreval
        escreval("-------------------------------------")
        escreval
        
-       escreva("Informe o CÔøΩdigo do Parcelamento (Digite 1, 2 ou 3): ")
+       escreva("Informe o CÛdigo do Parcelamento (Digite 1, 2 ou 3): ")
        leia(Codigo_Pgto_Cartao)
        
        escreval
@@ -308,9 +308,9 @@ Inicio
        escreval
        
        enquanto ((Codigo_Pgto_Cartao < 1) ou (Codigo_Pgto_Cartao > 3)) faca
-         escreval("CÔøΩdigo InvÔøΩlido!")
+         escreval("CÛdigo Inv·lido!")
 
-         escreva("Digite Novamente o CÔøΩdigo do Parcelamento ")
+         escreva("Digite Novamente o CÛdigo do Parcelamento ")
          escreva("(Digite 1, 2 ou 3): ")
          leia(Codigo_Pgto_Cartao)
 
@@ -322,7 +322,7 @@ Inicio
        escolha Codigo_Pgto_Cartao
          Caso 1
            Vlr_Parcelado <- Total_Compra
-           Parcelamento  <- "1 - ÔøΩ VISTA"
+           Parcelamento  <- "1 - ¿ VISTA"
            
            escreval("Parcelamento: ", Parcelamento)
            escreval("Valor Pago  : R$ ", Vlr_Parcelado:1:2)
@@ -332,7 +332,7 @@ Inicio
            
            se (Vlr_Parcelado < 50) entao
              Vlr_Parcelado <- Total_Compra
-             Parcelamento  <- "1 - ÔøΩ VISTA"
+             Parcelamento  <- "1 - ¿ VISTA"
              
              escreval("Parcelamento: ", Parcelamento)
              escreval("Valor Pago  : R$ ", Vlr_Parcelado:1:2)
@@ -351,7 +351,7 @@ Inicio
              
              se (Vlr_Parcelado < 50) entao
                Vlr_Parcelado <- Total_Compra
-               Parcelamento  <- "1 - ÔøΩ VISTA"
+               Parcelamento  <- "1 - ¿ VISTA"
 
                escreval("Parcelamento: ", Parcelamento)
                escreval("Valor Pago  : R$ ", Vlr_Parcelado:1:2)
@@ -382,7 +382,7 @@ Inicio
    escreval
    
    enquanto ((Recebeu <> "S") e (Recebeu <> "N")) faca
-     escreval("Caractere InvÔøΩlido!")
+     escreval("Caractere Inv·lido!")
 
      escolha Codigo_Forma_Pgto
        Caso 1
@@ -414,7 +414,7 @@ Inicio
    se (Recebeu = "S") entao
      para i de 0 ate Qtd_Produtos_Compra - 1 faca
        escreval("PRODUTO", i + 1, "            : ", Vet_Nome_Produto[i])
-       escreval("PREÔøΩO                : R$ ", Vet_Preco_Produto[i]:1:2)
+       escreval("PRE«O                : R$ ", Vet_Preco_Produto[i]:1:2)
        escreval("QUANTIDADE           :", Vet_Qtd_Produto[i])
        escreval("TOTAL                : R$ ", Vet_Total_Produto[i]:1:2)
        escreval
