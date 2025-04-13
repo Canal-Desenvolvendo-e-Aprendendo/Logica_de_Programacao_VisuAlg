@@ -41,12 +41,12 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 // -------- CONTROLE DE ESTOQUE --------
 
-// PRODUTO: CIMENTO
-// PREÇO  : R$ 50,00
+// PRODUTO              : CIMENTO
+// PREÇO                : R$ 50,00
 
 //  1 - PRODUTOS EM ESTOQUE:
 
-// A.QUANTIDADES:
+// A.QUANTIDADES        :
 
 // QUANTIDADE INICIAL   : 1000
 
@@ -68,13 +68,13 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 // ESTOQUE ATUAL        : 4400
 
-// B.VALORES:
+//  B.VALORES           :
 
 // VALOR INICIAL        : R$ 50000,00
 
 // ENTRADA 1            : R$ 50000,00
 // ENTRADA 2            : R$ 75000,00
-// ENTRADA 3            : R$ 1000000,00
+// ENTRADA 3            : R$ 100000,00
 
 // ENTRADA - TOTAL      : R$ 225000,00
 
@@ -88,7 +88,7 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 //  2 - PRODUTOS VENDIDOS E RESERVADOS:
 
-// A.QUANTIDADES:
+// A.QUANTIDADES        :
 
 // RESERVA 1            : 500
 // RESERVA 2            : 400
@@ -100,7 +100,7 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 // ESTOQUE ATUAL        : 3150
 
-// B.VALORES:
+// B.VALORES            :
 
 // RESERVA 1            : R$ 25000,00
 // RESERVA 2            : R$ 20000,00
@@ -112,7 +112,7 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 //  3 - PRODUTOS VENDIDOS E RETIRADOS.
 
-// A.QUANTIDADES:
+// A.QUANTIDADES        :
 
 // RETIRADA 1           : 500
 // RETIRADA 2           : 320
@@ -125,7 +125,7 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 // ESTOQUE ATUAL        : 1150
 
-// B.VALORES:
+// B.VALORES            :
 
 // RETIRADA 1           : R$ 25000,00
 // RETIRADA 2           : R$ 16000,00
@@ -377,7 +377,8 @@ Inicio
      
      se ((Tipo_Alteracao = "S") e (Qtd_Estoque > 0)) entao
        escreva("Digite a Quantidade do Material - ", Nome_Produto)
-       escreva(" - que Saiu do Estoque ou 0 para Sair: ")
+       escreva(" - que Saiu do Estoque ou está Reservado ")
+       escreva("ou 0 para Sair: ")
        leia(Qtd_Saida)
 
        escreval
@@ -389,8 +390,8 @@ Inicio
            escreval("Quantidade Inválida!")
            
            se (Qtd_Saida > Qtd_Estoque) entao
-             escreva("A Quantidade da Saída é menor que a Quantidade ")
-             escreva("de Produtos em Estoque!")
+             escreva("A Quantidade da Saída ou Reserva é menor que ")
+             escreval("a Quantidade de Produtos em Estoque!")
              escreval
              escreval("-------------------------------------")
              escreval
@@ -402,8 +403,8 @@ Inicio
            fimse
 
            escreva("Informe Novamente a Quantidade do Material - ")
-           escreva(Nome_Produto, " - que Saiu do Estoque ou 0 ")
-           escreva("para Sair: ")
+           escreva(Nome_Produto, " - que Saiu do Estoque ou ")
+           escreva(" está Reservado ou 0 para Sair: ")
            leia(Qtd_Saida)
 
            escreval
@@ -456,7 +457,8 @@ Inicio
          fimescolha
          
          escreva("Digite a Quantidade do Material - ", Nome_Produto)
-         escreva(" - que Saiu do Estoque ou 0 para Sair: ")
+         escreva(" - que Saiu do Estoque ou está Reservado ")
+         escreva("ou 0 para Sair: ")
          leia(Qtd_Saida)
 
          escreval
