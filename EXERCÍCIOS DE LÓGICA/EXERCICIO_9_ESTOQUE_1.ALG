@@ -1,12 +1,12 @@
 Algoritmo "Exercicio_9_Estoque_1"
 
-// EXERCÕCIO 9 - ESTOQUE 1
+// EXERC√çCIO 9 - ESTOQUE 1
 
-// CRIAR UM ALGORITMO QUE SIMULE UM DEP”SITO DE MATERIAL DE
-// CONSTRU«√O QUE TENHA EM ESTOQUE SACOS DE CAL, CIMENTO, AREIA E
+// CRIAR UM ALGORITMO QUE SIMULE UM DEP√ìSITO DE MATERIAL DE
+// CONSTRU√á√ÉO QUE TENHA EM ESTOQUE SACOS DE CAL, CIMENTO, AREIA E
 // PEDRA.
 
-// O CONTROLE DE ESTOQUE DOS PRODUTOS … DIVIDIDO DA SEGUINTE FORMA:
+// O CONTROLE DE ESTOQUE DOS PRODUTOS √â DIVIDIDO DA SEGUINTE FORMA:
 
 // -------- CONTROLE DE ESTOQUE --------
 
@@ -16,10 +16,10 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 // -------------------------------------
 
-// DEVE-SE PERMITIR QUE O USU¡RIO AUMENTE E DIMINUA A QUANTIDADE DE
+// DEVE-SE PERMITIR QUE O USU√ÅRIO AUMENTE E DIMINUA A QUANTIDADE DE
 // SOMENTE UM PRODUTO. EX:
 
-// -------- MATERIAIS DISPONÕVEIS --------
+// -------- MATERIAIS DISPON√çVEIS --------
 
 //  1 - AREIA   => R$ 20.00
 //  2 - CAL     => R$ 25.00
@@ -28,118 +28,118 @@ Algoritmo "Exercicio_9_Estoque_1"
 
 // ---------------------------------------
 
-// OBS: POSSO ALTERAR QUANTAS VEZES FOR NECESS¡RIO E EM QUALQUER
+// OBS: POSSO ALTERAR QUANTAS VEZES FOR NECESS√ÅRIO E EM QUALQUER
 // FORMATO (EM ESTOQUE, VENDIDO E RESERVADO E/OU VENDIDO E RETIRADO),
-// S” QUE A PARTIR DO MOMENTO QUE ESCOLHI O PRODUTO S” POSSO FAZER A
-// ALTERA«√O NESTE PRODUTO, PARA ALTERAR OUTRO PRODUTO, DEVE-SE
+// S√ì QUE A PARTIR DO MOMENTO QUE ESCOLHI O PRODUTO S√ì POSSO FAZER A
+// ALTERA√á√ÉO NESTE PRODUTO, PARA ALTERAR OUTRO PRODUTO, DEVE-SE
 // EXECUTAR O PROGRAMA NOVAMENTE.
 
 // NO FINAL, DEVE-SE INFORMAR A QUANTIDADE TOTAL DO PRODUTO E O
 // VALOR TOTAL DO PRODUTO, QUANTAS VEZES FOI ALTERADO, O TIPO DE
-// ALTERA«√O, OU SEJA, SE AUMENTOU OU DIMINUIU A QUANTIDADE, E ONDE
-// OCORRERAM AS ALTERA«’ES, SENDO INFORMADO TODOS OS TOTAIS. EX:
+// ALTERA√á√ÉO, OU SEJA, SE AUMENTOU OU DIMINUIU A QUANTIDADE, E ONDE
+// OCORRERAM AS ALTERA√á√ïES, SENDO INFORMADO TODOS OS TOTAIS. EX:
 
 // -------- CONTROLE DE ESTOQUE --------
 
-// PRODUTO              : CIMENTO
-// PRE«O                : R$ 50,00
+// PRODUTO             : CIMENTO
+// PRE√áO               : R$ 50,00
 
 //  1 - PRODUTOS EM ESTOQUE:
 
-// A.QUANTIDADES        :
+// A.QUANTIDADES       :
 
-// QUANTIDADE INICIAL   : 1000
+// QUANTIDADE INICIAL  : 1000
 
-// ENTRADA 1            : 1000
-// ENTRADA 2            : 1500
-// ENTRADA 3            : 2000
+// ENTRADA 1           : 1000
+// ENTRADA 2           : 1500
+// ENTRADA 3           : 2000
 
-// ENTRADA - TOTAL      : 4500
+// ENTRADA - TOTAL     : 4500
 
-// QTD DE ENTRADAS      : 3
+// QTD DE ENTRADAS     : 3
 
-// SAÕDA 1              : 30
-// SAÕDA 2              : 20
-// SAÕDA 3              : 50
+// SA√çDA 1             : 30
+// SA√çDA 2             : 20
+// SA√çDA 3             : 50
 
-// SAÕDA - TOTAL        : 100
+// SA√çDA - TOTAL       : 100
 
-// QTD DE SAÕDAS        : 3
+// QTD DE SA√çDAS       : 3
 
-// ESTOQUE ATUAL        : 4400
+// ESTOQUE ATUAL       : 4400
 
-//  B.VALORES           :
+//  B.VALORES          :
 
-// VALOR INICIAL        : R$ 50000,00
+// VALOR INICIAL       : R$ 50000,00
 
-// ENTRADA 1            : R$ 50000,00
-// ENTRADA 2            : R$ 75000,00
-// ENTRADA 3            : R$ 100000,00
+// ENTRADA 1           : R$ 50000,00
+// ENTRADA 2           : R$ 75000,00
+// ENTRADA 3           : R$ 100000,00
 
-// ENTRADA - TOTAL      : R$ 225000,00
+// ENTRADA - TOTAL     : R$ 225000,00
 
-// SAÕDA 1              : R$ 1500,00
-// SAÕDA 2              : R$ 1000,00
-// SAÕDA 3              : R$ 2500,00
+// SA√çDA 1             : R$ 1500,00
+// SA√çDA 2             : R$ 1000,00
+// SA√çDA 3             : R$ 2500,00
 
-// SAÕDA - TOTAL        : R$ 5000,00
+// SA√çDA - TOTAL       : R$ 5000,00
 
 // VALOR ESTOOQUE ATUAL: R$ 220000,00
 
 //  2 - PRODUTOS VENDIDOS E RESERVADOS:
 
-// A.QUANTIDADES        :
+// A.QUANTIDADES       :
 
-// RESERVA 1            : 500
-// RESERVA 2            : 400
-// RESERVA 3            : 350
+// RESERVA 1           : 500
+// RESERVA 2           : 400
+// RESERVA 3           : 350
 
-// RESERVA - TOTAL      : 1250
+// RESERVA - TOTAL     : 1250
 
-// QTD DE RESERVAS      : 3
+// QTD DE RESERVAS     : 3
 
-// ESTOQUE ATUAL        : 3150
+// ESTOQUE ATUAL       : 3150
 
-// B.VALORES            :
+// B.VALORES           :
 
-// RESERVA 1            : R$ 25000,00
-// RESERVA 2            : R$ 20000,00
-// RESERVA 3            : R$ 17500,00
+// RESERVA 1           : R$ 25000,00
+// RESERVA 2           : R$ 20000,00
+// RESERVA 3           : R$ 17500,00
 
-// RESERVA - TOTAL      : R$ 62500,00
+// RESERVA - TOTAL     : R$ 62500,00
 
-// VALOR ESTOOQUE ATUAL : R$ 157500,00
+// VALOR ESTOOQUE ATUAL: R$ 157500,00
 
 //  3 - PRODUTOS VENDIDOS E RETIRADOS.
 
-// A.QUANTIDADES        :
+// A.QUANTIDADES       :
 
-// RETIRADA 1           : 500
-// RETIRADA 2           : 320
-// RETIRADA 3           : 180
-// RETIRADA 4           : 1000
+// RETIRADA 1          : 500
+// RETIRADA 2          : 320
+// RETIRADA 3          : 180
+// RETIRADA 4          : 1000
 
-// RETIRADA - TOTAL     : 2000
+// RETIRADA - TOTAL    : 2000
 
-// QTD DE RETIRADAS     : 4
+// QTD DE RETIRADAS    : 4
 
-// ESTOQUE ATUAL        : 1150
+// ESTOQUE ATUAL       : 1150
 
-// B.VALORES            :
+// B.VALORES           :
 
-// RETIRADA 1           : R$ 25000,00
-// RETIRADA 2           : R$ 16000,00
-// RETIRADA 3           : R$ 9000,00
-// RETIRADA 4           : R$ 50000,00
+// RETIRADA 1          : R$ 25000,00
+// RETIRADA 2          : R$ 16000,00
+// RETIRADA 3          : R$ 9000,00
+// RETIRADA 4          : R$ 50000,00
 
-// RETIRADA - TOTAL     : R$ 100000,00
+// RETIRADA - TOTAL    : R$ 100000,00
 
 // VALOR ESTOOQUE ATUAL: R$ 57500,00
 
 // -------------------------------------
 
 Var
-   // Vari·veis
+   // Vari√°veis
 
    // Caractere
    Nome_Produto, Continuar, Tipo_Alteracao                : Caractere
@@ -182,7 +182,7 @@ Var
    Vet_Vlr_Retirada         : Vetor [0..9] de Real
 
 Inicio
-   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   // Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
    
    // Quantidade
    Qtd_Estoque             <- 0
@@ -201,7 +201,7 @@ Inicio
    Count_Saida             <- 0
    Count_Retirada          <- 0
 
-   escreval("-------- MATERIAIS DISPONÕVEIS --------")
+   escreval("-------- MATERIAIS DISPON√çVEIS --------")
    escreval
    escreval("  1 - AREIA   => R$ 20.00")
    escreval("  2 - CAL     => R$ 25.00")
@@ -211,7 +211,7 @@ Inicio
    escreval("---------------------------------------")
    escreval
 
-   escreva("Informe o CÛdigo do Material: ")
+   escreva("Informe o C√≥digo do Material: ")
    leia(Codigo_Produto)
 
    escreval
@@ -219,9 +219,9 @@ Inicio
    escreval
 
    enquanto ((Codigo_Produto < 1) ou (Codigo_Produto > 4)) faca
-      escreval("CÛdigo Inv·lido!")
+      escreval("C√≥digo Inv√°lido!")
 
-      escreva("Informe Novamente o CÛdigo do Material: ")
+      escreva("Informe Novamente o C√≥digo do Material: ")
       leia(Codigo_Produto)
 
       escreval
@@ -262,7 +262,7 @@ Inicio
          escreval("-------------------------------------")
          escreval
          
-         escreva("Informe o CÛdigo do Estoque: ")
+         escreva("Informe o C√≥digo do Estoque: ")
          leia(Codigo_Estoque)
 
          escreval
@@ -270,9 +270,9 @@ Inicio
          escreval
          
          enquanto ((Codigo_Estoque < 1) ou (Codigo_Estoque > 3)) faca
-           escreval("CÛdigo Inv·lido!")
+           escreval("C√≥digo Inv√°lido!")
 
-           escreva("Informe Novamente o CÛdigo do Estoque: ")
+           escreva("Informe Novamente o C√≥digo do Estoque: ")
            leia(Codigo_Estoque)
 
            escreval
@@ -280,7 +280,7 @@ Inicio
            escreval
          fimenquanto
        senao
-         escreval("Quantidade de Produtos em Estoque È Inv·lida!")
+         escreval("Quantidade de Produtos em Estoque √© Inv√°lida!")
        fimse
      fimse
      
@@ -289,15 +289,15 @@ Inicio
          Vet_Tipo_Controle_Estoque[0] <- "1 - PRODUTOS EM ESTOQUE"
          
          se ((Tipo_Alteracao = "") ou (Tipo_Alteracao = "S")) entao
-           escreval("--------- TIPO DE ALTERA«√O ---------")
+           escreval("--------- TIPO DE ALTERA√á√ÉO ---------")
            escreval
            escreval(" E - ENTRADA DE PRODUTOS NO ESTOQUE;")
-           escreval(" S - SAÕDA DE PRODUTOS DO ESTOQUE.")
+           escreval(" S - SA√çDA DE PRODUTOS DO ESTOQUE.")
            escreval
            escreval("-------------------------------------")
            escreval
            
-           escreva("Informe o Tipo de AlteraÁ„o que ser· Realizado ")
+           escreva("Informe o Tipo de Altera√ß√£o que ser√° Realizado ")
            escreva("(E/S): ")
            leia(Tipo_Alteracao)
            
@@ -306,9 +306,9 @@ Inicio
            escreval
            
            enquanto ((Tipo_Alteracao <> "E") e (Tipo_Alteracao <> "S")) faca
-             escreval("Tipo Inv·lido!")
+             escreval("Tipo Inv√°lido!")
 
-             escreva("Informe Novamente o Tipo de AlteraÁ„o que ser· ")
+             escreva("Informe Novamente o Tipo de Altera√ß√£o que ser√° ")
              escreva("Realizado (E/S): ")
              leia(Tipo_Alteracao)
 
@@ -329,7 +329,7 @@ Inicio
 
            enquanto (Qtd_Entrada <> 0) faca
              enquanto (Qtd_Entrada < 0) faca
-               escreval("Quantidade Inv·lida!")
+               escreval("Quantidade Inv√°lida!")
 
                escreva("Informe Novamente a Quantidade do Material - ")
                escreva(Nome_Produto, " - que Entrou no Estoque ou 0 ")
@@ -377,7 +377,7 @@ Inicio
      
      se ((Tipo_Alteracao = "S") e (Qtd_Estoque > 0)) entao
        escreva("Digite a Quantidade do Material - ", Nome_Produto)
-       escreva(" - que Saiu do Estoque ou est· Reservado ")
+       escreva(" - que Saiu do Estoque ou est√° Reservado ")
        escreva("ou 0 para Sair: ")
        leia(Qtd_Saida)
 
@@ -387,16 +387,16 @@ Inicio
        
        enquanto (Qtd_Saida <> 0) faca
          enquanto ((Qtd_Saida < 0) ou (Qtd_Saida > Qtd_Estoque))faca
-           escreval("Quantidade Inv·lida!")
+           escreval("Quantidade Inv√°lida!")
            
            se (Qtd_Saida > Qtd_Estoque) entao
-             escreva("A Quantidade da SaÌda ou Reserva È menor que ")
+             escreva("A Quantidade da Sa√≠da ou Reserva √© menor que ")
              escreval("a Quantidade de Produtos em Estoque!")
              escreval
              escreval("-------------------------------------")
              escreval
              escreval("Quantidade em Estoque =", Qtd_Estoque)
-             escreval("Quantidade da SaÌda   =", Qtd_Saida)
+             escreval("Quantidade da Sa√≠da   =", Qtd_Saida)
              escreval
              escreval("-------------------------------------")
              escreval
@@ -404,7 +404,7 @@ Inicio
 
            escreva("Informe Novamente a Quantidade do Material - ")
            escreva(Nome_Produto, " - que Saiu do Estoque ou ")
-           escreva(" est· Reservado ou 0 para Sair: ")
+           escreva(" est√° Reservado ou 0 para Sair: ")
            leia(Qtd_Saida)
 
            escreval
@@ -457,7 +457,7 @@ Inicio
          fimescolha
          
          escreva("Digite a Quantidade do Material - ", Nome_Produto)
-         escreva(" - que Saiu do Estoque ou est· Reservado ")
+         escreva(" - que Saiu do Estoque ou est√° Reservado ")
          escreva("ou 0 para Sair: ")
          leia(Qtd_Saida)
 
@@ -475,7 +475,7 @@ Inicio
      escreval
      
      enquanto ((Continuar <> "S") e (Continuar <> "N")) faca
-       escreval("Caractere Inv·lido!")
+       escreval("Caractere Inv√°lido!")
 
        escreva("Informe Novamente se Deseja Continuar Alterando ")
        escreva("o Estoque?: ")
@@ -490,7 +490,7 @@ Inicio
    escreval("-------- CONTROLE DE ESTOQUE --------")
    escreval
    escreval("PRODUTO              : ", Nome_Produto)
-   escreval("PRE«O                : R$ ", Preco_Produto:2:2)
+   escreval("PRE√áO                : R$ ", Preco_Produto:2:2)
    escreval
    escreval("-------------------------------------")
    escreval
@@ -529,17 +529,17 @@ Inicio
          escreval
 
          para i de 0 ate Count_Saida - 1 faca
-           escreval("SAÕDA", i + 1, "              : ", Vet_Qtd_Saida[i])
+           escreval("SA√çDA", i + 1, "              : ", Vet_Qtd_Saida[i])
          fimpara
 
          escreval
          escreval("-------------------------------------")
          escreval
-         escreval("SAÕDA - TOTAL        :", Qtd_Total_Saida_Estoque)
+         escreval("SA√çDA - TOTAL        :", Qtd_Total_Saida_Estoque)
          escreval
          escreval("-------------------------------------")
          escreval
-         escreval("QTD DE SAÕDAS        :", Count_Saida)
+         escreval("QTD DE SA√çDAS        :", Count_Saida)
          
          Qtd_Estoque_Atual <- Qtd_Total_Estoque - Qtd_Total_Saida_Estoque
        
@@ -608,13 +608,13 @@ Inicio
          escreval
 
          para i de 0 ate Count_Saida - 1 faca
-           escreval("SAÕDA", i + 1, "              : R$ ", Vet_Vlr_Saida[i]:2:2)
+           escreval("SA√çDA", i + 1, "              : R$ ", Vet_Vlr_Saida[i]:2:2)
          fimpara
 
          escreval
          escreval("-------------------------------------")
          escreval
-         escreval("SAÕDA - TOTAL        : R$ ", Vlr_Total_Saida:2:2)
+         escreval("SA√çDA - TOTAL        : R$ ", Vlr_Total_Saida:2:2)
 
        Caso 2
          para i de 0 ate Count_Reserva - 1 faca
