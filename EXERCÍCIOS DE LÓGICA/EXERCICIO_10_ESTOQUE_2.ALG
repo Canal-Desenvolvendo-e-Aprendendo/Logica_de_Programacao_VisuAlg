@@ -760,8 +760,6 @@ Inicio
            
            escreval
            escreval("---------------------------------------")
-           
-           Count_Entrada <- Count_Entrada + 1
          fimpara
 
          escreval
@@ -825,8 +823,6 @@ Inicio
 
            escreval
            escreval("---------------------------------------")
-
-           Count_Saida <- Count_Saida + 1
          fimpara
 
          escreval
@@ -894,8 +890,6 @@ Inicio
 
            escreval
            escreval("---------------------------------------")
-
-           Count_Reserva <- Count_Reserva + 1
          fimpara
 
          escreval
@@ -963,8 +957,6 @@ Inicio
 
            escreval
            escreval("---------------------------------------")
-
-           Count_Retirada <- Count_Retirada + 1
          fimpara
 
          escreval
