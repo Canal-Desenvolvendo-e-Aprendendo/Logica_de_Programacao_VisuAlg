@@ -1,6 +1,6 @@
 Algoritmo "Exercicio_2_Media_Alunos_Vetor"
 
-// EXERCÍCIO 2 - VETOR
+// EXERC�CIO 2 - VETOR
 
 // CRIAR UM ALGORITMO QUE REALIZE A MÉDIA DE VÁRIOS ALUNOS QUE
 // TERÃO 4 NOTAS (CADA UM)
@@ -25,18 +25,18 @@ Algoritmo "Exercicio_2_Media_Alunos_Vetor"
 
 Var
 // Variáveis
-   i, N          : Inteiro
+   i, N                                      : Inteiro
 
 // Vetores
-   Vet_Nota1     : Vetor [0..29] de Real
-   Vet_Nota2     : Vetor [0..29] de Real
-   Vet_Nota3     : Vetor [0..29] de Real
-   Vet_Nota4     : Vetor [0..29] de Real
-   Vet_Soma      : Vetor [0..29] de Real
-   Vet_Media     : Vetor [0..29] de Real
+   Vet_Nota1    : Vetor [0..29] de Real
+   Vet_Nota2    : Vetor [0..29] de Real
+   Vet_Nota3    : Vetor [0..29] de Real
+   Vet_Nota4    : Vetor [0..29] de Real
+   Vet_Soma     : Vetor [0..29] de Real
+   Vet_Media    : Vetor [0..29] de Real
    
-   Vet_Nome_Aluno: Vetor [0..29] de Caractere
-   Vet_Situacao  : Vetor [0..29] de Caractere
+   Vet_Nome_Alun: Vetor [0..29] de Caractere
+   Vet_Situacao : Vetor [0..29] de Caractere
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -63,7 +63,7 @@ Inicio
      // NOTA 1
      escreva("Informe a Nota 1: ")
      leia(Vet_Nota1[i])
-     
+
      escreval
 
      enquanto ((Vet_Nota1[i] < 0) ou (Vet_Nota1[i] > 10)) faca
@@ -77,7 +77,7 @@ Inicio
      // NOTA 2
      escreva("Informe a Nota 2: ")
      leia(Vet_Nota2[i])
-     
+
      escreval
 
      enquanto ((Vet_Nota2[i] < 0) ou (Vet_Nota2[i] > 10)) faca
@@ -91,7 +91,7 @@ Inicio
      // NOTA 3
      escreva("Informe a Nota 3: ")
      leia(Vet_Nota3[i])
-     
+
      escreval
 
      enquanto ((Vet_Nota3[i] < 0) ou (Vet_Nota3[i] > 10)) faca
@@ -105,7 +105,7 @@ Inicio
      // NOTA 4
      escreva("Informe a Nota 4: ")
      leia(Vet_Nota4[i])
-     
+
      escreval
 
      enquanto ((Vet_Nota4[i] < 0) ou (Vet_Nota4[i] > 10)) faca
