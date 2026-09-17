@@ -1,10 +1,10 @@
 Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
-// EXERCÕCIO 15 - EXAMES LABORATORIAIS
+// EXERC√çCIO 15 - EXAMES LABORATORIAIS
 
-// CRIAR UM ALGORITMO QUE SIMULE UMA CLÕNICA LABORATORIAL, NO QUAL,
+// CRIAR UM ALGORITMO QUE SIMULE UMA CL√çNICA LABORATORIAL, NO QUAL,
 // PODE-SE SOLICITAR DIVERSOS EXAMES E/OU CONSULTAS UTILIZANDO O
-// CONV NIO OU SENDO PARTICULAR, E DEVER¡ SEGUIR AS SEGUINTES REGRAS:
+// CONV√äNIO OU SENDO PARTICULAR, E DEVER√Å SEGUIR AS SEGUINTES REGRAS:
 
 // -----------------------------------------------------------------
 
@@ -21,13 +21,13 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // 15 - BNP: R$ 140,00 - R$ 10,00 = R$ 130,00
 // 23 - CK-MB: R$ 50,00
 // 34 - ECG: R$ 150,00 - R$ 10,00 = R$ 140,00
-// 55 - HOMOCISTEÕNA: R$ 100,00 - R$ 10,00 = R$ 90,00
+// 55 - HOMOCISTE√çNA: R$ 100,00 - R$ 10,00 = R$ 90,00
 // 82 - TROPONINA: R$ 80,00 - R$ 10,00 = R$ 70,00
 
 // -----------------------------------------------------------------
 
-// 2 - O EXAME SOLICITADO PELO M…DICO DEVE APARECER UMA SIGLA "SM"
-// PARA DEIXAR EXPLÕCITO AO PACIENTE QUAL EXAME N√O FAZ PARTE DO
+// 2 - O EXAME SOLICITADO PELO M√âDICO DEVE APARECER UMA SIGLA "SM"
+// PARA DEIXAR EXPL√çCITO AO PACIENTE QUAL EXAME N√ÉO FAZ PARTE DO
 // PEDIDO, MAS FAZ PARTE DO COMBO. EX:
 
 // -----------------------------------------------------------------
@@ -37,7 +37,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // SM | 15 - BNP
 // 23 - CK-MB
 // SM | 34 - ECG
-// 55 - HOMOCISTEÕNA
+// 55 - HOMOCISTE√çNA
 // 82 - TROPONINA
 
 // -----------------------------------------------------------------
@@ -54,7 +54,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // OFERECER ESTE COMBO CORRESPONDENTE E MOSTRAR NA TELA TODOS OS
 // EXAMES CONTIDOS NESTE COMBO;
 
-// 3.3 - CASO TENHA DE 3 AT… 9 EXAMES COMPOSTOS EM COMBOS DIFERENTES,
+// 3.3 - CASO TENHA DE 3 AT√â 9 EXAMES COMPOSTOS EM COMBOS DIFERENTES,
 // SEGUIR AS SEGUINTES REGRAS:
 
 // -----------------------------------------------------------------
@@ -63,7 +63,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // UM COMBO ESPECIAL DANDO R$ 5,00 DE DESCONTO EM CADA EXAME QUE CUSTAR
 // MAIS DE R$ 50,00;
 
-// 3.3.2 - SE TIVEREM DIVIDIDOS EM V¡RIOS COMBOS, APARECER A OP«√O DE
+// 3.3.2 - SE TIVEREM DIVIDIDOS EM V√ÅRIOS COMBOS, APARECER A OP√á√ÉO DE
 // TODOS OS COMBOS E MOSTRAR NA TELA TODOS OS EXAMES CONTIDOS EM CADA
 // COMBO E APLICAR UM DESCONTO DE:
 
@@ -71,13 +71,13 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // - 3,5% NO VALOR TOTAL SE ESCOLHER 2 COMBOS;
 // - 2,5% NO VALOR TOTAL SE ESOLHER SOMENTE 1 COMBO.
 
-// OBS: CASO N√O ESCOLHER NENHUM COMBO, APLICAR OU A REGRA DO
-// T”PICO 3.1 SE FOR, NO MÕNIMO, 10 EXAMES, OU 3.3.1 SE TIVER MENOS
+// OBS: CASO N√ÉO ESCOLHER NENHUM COMBO, APLICAR OU A REGRA DO
+// T√ìPICO 3.1 SE FOR, NO M√çNIMO, 10 EXAMES, OU 3.3.1 SE TIVER MENOS
 // DE 10 EXAMES;
 
 // -----------------------------------------------------------------
 
-// 3.4 - CASO TENHA MENOS DE 3 EXAMES, O PACIENTE PAGAR¡ O PRE«O
+// 3.4 - CASO TENHA MENOS DE 3 EXAMES, O PACIENTE PAGAR√Å O PRE√áO
 // AVULSO SEM DESCONTO;
 
 // 3.5 - CASO O EXAME PERTENCER EM MAIS DE 1 COMBO, SUGERIR TODOS OS
@@ -89,7 +89,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // -----------------------------------------------------------------
 
-// 4 - O PACIENTE PODER¡ MARCAR QUANTOS COMBOS/EXAMES DESEJAR.
+// 4 - O PACIENTE PODER√Å MARCAR QUANTOS COMBOS/EXAMES DESEJAR.
 
 // -----------------------------------------------------------------
 
@@ -97,33 +97,33 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // 1 - DEVE-SE INFORMAR A ESPECIALIDADE E O MOTIVO DA CONSULTA;
 
-// 2 - O PACIENTE PODER¡ MARCAR QUANTAS ESPECIALIDADES DESEJAR.
+// 2 - O PACIENTE PODER√Å MARCAR QUANTAS ESPECIALIDADES DESEJAR.
 
 // -----------------------------------------------------------------
 
 // OBS:
 
-// 1. DEVE-SE INFORMAR TODOS OS DADOS CADASTRAIS DO PACIENTE QUE S√O
-// NECESS¡RIOS PARA A REALIZA«√O DA(S) CONSULTA(S) E/OU DO(S) EXAME(S);
+// 1. DEVE-SE INFORMAR TODOS OS DADOS CADASTRAIS DO PACIENTE QUE S√ÉO
+// NECESS√ÅRIOS PARA A REALIZA√á√ÉO DA(S) CONSULTA(S) E/OU DO(S) EXAME(S);
 
-// 2. CASO O PACIENTE REALIZE OS EXAMES SOLICITADOS PELO M…DICO DA
-// CLÕNICA, ELE TER¡ UM DESCONTO DE 5% DO VALOR TOTAL (CONSULTA +
+// 2. CASO O PACIENTE REALIZE OS EXAMES SOLICITADOS PELO M√âDICO DA
+// CL√çNICA, ELE TER√Å UM DESCONTO DE 5% DO VALOR TOTAL (CONSULTA +
 // EXAMES) INDEPENDENTEMENTE DA FORMA DE PAGAMENTO E DOS DECONTOS
-// DADOS NOS CRIT…RIOS 3.1, 3.2 E 3.3;
+// DADOS NOS CRIT√âRIOS 3.1, 3.2 E 3.3;
 
-// 3. TODAS AS ESPECIALIDADES TEM DIREITO AO RETORNO, MAS S” AP”S
-// 60 DIAS, EXCETO SE FOREM REALIZADOS OS EXAMES NA CLÕNICA, POIS,
-// NESTE CASO, O RETORNO SER¡ REALIZADO AT… 1 SEMANA AP”S O RESULTADO;
+// 3. TODAS AS ESPECIALIDADES TEM DIREITO AO RETORNO, MAS S√ì AP√ìS
+// 60 DIAS, EXCETO SE FOREM REALIZADOS OS EXAMES NA CL√çNICA, POIS,
+// NESTE CASO, O RETORNO SER√Å REALIZADO AT√â 1 SEMANA AP√ìS O RESULTADO;
 
-// 4. DEVE-SE MOSTRAR A FORMA DE PAGAMENTO, QUE PODER¡ SER DE 4
-// FORMAS: CONV NIO, PIX, CART√O DE D…BITO OU CART√O DE CR…DITO
-// (PERMITIR FAZER EM AT… 6X SEM JUROS COM PARCELA MÕNIMA DE R$ 50,00).
+// 4. DEVE-SE MOSTRAR A FORMA DE PAGAMENTO, QUE PODER√Å SER DE 4
+// FORMAS: CONV√äNIO, PIX, CART√ÉO DE D√âBITO OU CART√ÉO DE CR√âDITO
+// (PERMITIR FAZER EM AT√â 6X SEM JUROS COM PARCELA M√çNIMA DE R$ 50,00).
 
 // -----------------------------------------------------------------
 
 // - EX:
 
-//------------------------------------------------- TELA DE CONFIRMA«√O -----------------------------------------------
+//------------------------------------------------- TELA DE CONFIRMA√á√ÉO -----------------------------------------------
 
 // 1. DADOS PESSOAIS
 
@@ -131,16 +131,16 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // DATA DE NASCIMENTO              : 20/10/1990
 // CPF                             : 123.456.789-10
 // RG                              : 12.345.678-9
-// NOME DA M√E                     : FERNANDA MARTINS ROCHA
-// G NERO                          : FEMININO
+// NOME DA M√ÉE                     : FERNANDA MARTINS ROCHA
+// G√äNERO                          : FEMININO
 // ESTADO CIVIL                    : SOLTEIRO/A
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// 2. ENDERE«O
+// 2. ENDERE√áO
 
 // AVENIDA BRASIL, 123 - RESIDENCIAL BRASIL
-// S√O PAULO - SP - CEP: 12345-678
+// S√ÉO PAULO - SP - CEP: 12345-678
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -158,24 +158,24 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 ---------------------------------------------------------------------------------------------------------------------
 
 // ESPECIALIDADE                   : 3 - CARDIOLOGIA
-// M…DICO(A) SOLICITANTE           : DR. FERNANDO GARCÕA
-// MOTIVO DA CONSULTA              : REALIZA«√O DE CHECK-UP GERAL (AVALIA«√O CLÕNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI«’ES DE SA⁄DE ANTES DO INÕCIO DE ESTRAT…GIA DE CUTTING (REDU«√O DE GORDURA CORPORAL).
+// M√âDICO(A) SOLICITANTE           : DR. FERNANDO GARC√çA
+// MOTIVO DA CONSULTA              : REALIZA√á√ÉO DE CHECK-UP GERAL (AVALIA√á√ÉO CL√çNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI√á√ïES DE SA√öDE ANTES DO IN√çCIO DE ESTRAT√âGIA DE CUTTING (REDU√á√ÉO DE GORDURA CORPORAL).
 
 //---------------------------------------------------------------------------------------------------------------------
 
 // ESPECIALIDADE                   : 9 - ENDOCRINOLOGIA
-// M…DICO(A) SOLICITANTE           : DRA. GISELE FERNANDES
-// MOTIVO DA CONSULTA              : REALIZA«√O DE CHECK-UP GERAL (AVALIA«√O CLÕNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI«’ES DE SA⁄DE ANTES DO INÕCIO DE ESTRAT…GIA DE CUTTING (REDU«√O DE GORDURA CORPORAL).
+// M√âDICO(A) SOLICITANTE           : DRA. GISELE FERNANDES
+// MOTIVO DA CONSULTA              : REALIZA√á√ÉO DE CHECK-UP GERAL (AVALIA√á√ÉO CL√çNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI√á√ïES DE SA√öDE ANTES DO IN√çCIO DE ESTRAT√âGIA DE CUTTING (REDU√á√ÉO DE GORDURA CORPORAL).
 
 //---------------------------------------------------------------------------------------------------------------------
 
 // ESPECIALIDADE                   : 23 - ORTOPEDIA E TRAUMATOLOGIA
-// M…DICO(A) SOLICITANTE           : DR. PEDRO ALVES
-// MOTIVO DA CONSULTA              : REALIZA«√O DE CHECK-UP GERAL (AVALIA«√O CLÕNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI«’ES DE SA⁄DE ANTES DO INÕCIO DE ESTRAT…GIA DE CUTTING (REDU«√O DE GORDURA CORPORAL).
+// M√âDICO(A) SOLICITANTE           : DR. PEDRO ALVES
+// MOTIVO DA CONSULTA              : REALIZA√á√ÉO DE CHECK-UP GERAL (AVALIA√á√ÉO CL√çNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI√á√ïES DE SA√öDE ANTES DO IN√çCIO DE ESTRAT√âGIA DE CUTTING (REDU√á√ÉO DE GORDURA CORPORAL).
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// 5. HOR¡RIO AGENDADO:
+// 5. HOR√ÅRIO AGENDADO:
 
 //--------------------------------------------- ESPECIALIDADES ESCOLHIDAS ---------------------------------------------
 
@@ -194,14 +194,14 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // COMBO 1 - CARDIOLOGIA E RISCO CARDIOVASCULAR                          		                          | R$ 480.00
 // COMBO 2 - ESPECIAL FIT                                                		                          | R$ 832.50
-// COMBO 7 - HEMATOLOGIA (SANGUE E C…LULAS)                              		                          | R$ 520.00
+// COMBO 7 - HEMATOLOGIA (SANGUE E C√âLULAS)                              		                          | R$ 520.00
 // COMBO 8 - HORMONAS SEXUAIS                                            		                          | R$ 300.00
 // COMBO 9 - IMUNOLOGIA E SEROLOGIA                                      		                          | R$ 615.00
 // COMBO 11 - METABOLISMO E ENERGIA                                      		                          | R$ 225.00
 // COMBO 12 - OUTRAS HORMONAS                                            		                          | R$ 252.50
-// COMBO 13 - PERFIL LIPÕDICO                                            		                          | R$ 290.00
-// COMBO 14 - TIRE”IDE                                                   		                          | R$ 260.00
-// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL…TICO E PARTES MOLES       		                          | R$ 260.00
+// COMBO 13 - PERFIL LIP√çDICO                                            		                          | R$ 290.00
+// COMBO 14 - TIRE√ìIDE                                                   		                          | R$ 260.00
+// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL√âTICO E PARTES MOLES       		                          | R$ 260.00
 // COMBO 22 - VITAMINAS E MINERAIS                                       		                          | R$ 440.00
 // COMBO 23 - EXTRA
 
@@ -211,30 +211,30 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// EXAMES DE SANGUE N√O PRECISAM DE AGENDAMENTO.
+// EXAMES DE SANGUE N√ÉO PRECISAM DE AGENDAMENTO.
 // ATENDIMENTO REALIZADO POR ORDEM DE CHEGADA.
-// RECOMENDAMOS JEJUM CONFORME ORIENTA«√O M…DICA.
+// RECOMENDAMOS JEJUM CONFORME ORIENTA√á√ÉO M√âDICA.
 
-// HOR¡RIO DE COLETA: DE SEGUNDA A S¡BADO, DAS 7H ¿S 11H.
+// HOR√ÅRIO DE COLETA: DE SEGUNDA A S√ÅBADO, DAS 7H √ÄS 11H.
 
-// OBS.: TRAZER DOCUMENTO DE IDENTIFICA«√O E PEDIDO M…DICO (SE HOUVER).
+// OBS.: TRAZER DOCUMENTO DE IDENTIFICA√á√ÉO E PEDIDO M√âDICO (SE HOUVER).
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// JEJUM DE 8ñ12 HORAS (IDEAL FAZER JUNTOS):
+// JEJUM DE 8‚Äì12 HORAS (IDEAL FAZER JUNTOS):
 
-// 1 - ¡CIDO F”LICO
-// 10 - APOLIPOPROTEÕNAS A E B
-// 20 - C¡LCIO
+// 1 - √ÅCIDO F√ìLICO
+// 10 - APOLIPOPROTE√çNAS A E B
+// 20 - C√ÅLCIO
 // 25 - COLESTEROL TOTAL
 // 37 - FERRITINA
 // 38 - FERRO
-// 40 - F”SFORO
+// 40 - F√ìSFORO
 // 46 - HDL
-// 54 - HOMOCISTEÕNA
+// 54 - HOMOCISTE√çNA
 // 58 - LDL
-// 60 - MAGN…SIO
-// 80 - TRIGLIC…RIDOS
+// 60 - MAGN√âSIO
+// 80 - TRIGLIC√âRIDOS
 // 115 - VITAMINA B12
 // 116 - VITAMINA D
 // 117 - ZINCO
@@ -246,16 +246,16 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // 15 - BNP
 // 23 - CK-MB
 // 24 - COAGULOGRAMA (TP, INR, TTPA)
-// 32 - D-DÕMERO
-// 39 - FIBRINOG…NIO
+// 32 - D-D√çMERO
+// 39 - FIBRINOG√âNIO
 // 50 - HEMOGRAMA COMPLETO
-// 70 - RETICUL”CITOS
+// 70 - RETICUL√ìCITOS
 // 81 - TROPONINA
-// 114 - VELOCIDADE DE SEDIMENTA«√O (VHS / VSG)
+// 114 - VELOCIDADE DE SEDIMENTA√á√ÉO (VHS / VSG)
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// 6. INFORMA«’ES ADICIONAIS
+// 6. INFORMA√á√ïES ADICIONAIS
 
 // USA MEDICAMENTOS (S/N)?         : N
 // TEM ALERGIA A ALGUM MEDICAMENTO?: S - ASPIRINA
@@ -277,14 +277,14 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // COMBO 1 - CARDIOLOGIA E RISCO CARDIOVASCULAR                          		                             | R$  480.00
 // COMBO 2 - ESPECIAL FIT                                                		                             | R$  832.50
-// COMBO 7 - HEMATOLOGIA (SANGUE E C…LULAS)                              		                             | R$  520.00
+// COMBO 7 - HEMATOLOGIA (SANGUE E C√âLULAS)                              		                             | R$  520.00
 // COMBO 8 - HORMONAS SEXUAIS                                            		                             | R$  300.00
 // COMBO 9 - IMUNOLOGIA E SEROLOGIA                                      		                             | R$  615.00
 // COMBO 11 - METABOLISMO E ENERGIA                                      		                             | R$  225.00
 // COMBO 12 - OUTRAS HORMONAS                                            		                             | R$  252.50
-// COMBO 13 - PERFIL LIPÕDICO                                            		                             | R$  290.00
-// COMBO 14 - TIRE”IDE                                                   		                             | R$  260.00
-// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL…TICO E PARTES MOLES       		                             | R$  260.00
+// COMBO 13 - PERFIL LIP√çDICO                                            		                             | R$  290.00
+// COMBO 14 - TIRE√ìIDE                                                   		                             | R$  260.00
+// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL√âTICO E PARTES MOLES       		                             | R$  260.00
 // COMBO 22 - VITAMINAS E MINERAIS                                       		                             | R$  440.00
 // COMBO 23 - EXTRA                                                                                        | R$  450.00
 
@@ -307,7 +307,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// DESCONTO (B‘NUS)                                                                                        | R$  249.94
+// DESCONTO (B√îNUS)                                                                                        | R$  249.94
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -317,25 +317,25 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// OBA! VOC  REALIZOU TODOS OS EXAMES SOLICITADOS PELO(S) M…DICO(S) DA CLÕNICA CONOSCO E GANHOU UM B‘NUS DE 5% DE
+// OBA! VOC√ä REALIZOU TODOS OS EXAMES SOLICITADOS PELO(S) M√âDICO(S) DA CL√çNICA CONOSCO E GANHOU UM B√îNUS DE 5% DE
 // DESCONTO NO VALOR TOTAL (CONSULTA(S) + EXAME(S))!
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// VOC  ECONOMIZOU R$ 496.19
+// VOC√ä ECONOMIZOU R$ 496.19
 
-// FORMA DE PAGAMENTO: CART√O DE CR…DITO - 6x DE R$ 791.47 - R$ 4748.81
+// FORMA DE PAGAMENTO: CART√ÉO DE CR√âDITO - 6x DE R$ 791.47 - R$ 4748.81
 
 //---------------------------------------------------------------------------------------------------------------------
 
 // 8. CONSENTIMENTOS
 
-// [S] AUTORIZO O USO DOS MEUS DADOS PARA ATENDIMENTO M…DICO CONFORME LGPD
+// [S] AUTORIZO O USO DOS MEUS DADOS PARA ATENDIMENTO M√âDICO CONFORME LGPD
 // [S] AUTORIZO CONTATO VIA TELEFONE/WHATSAPP/E-MAIL
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// OS DADOS ACIMA EST√O CORRETOS (S/N)*: S
+// OS DADOS ACIMA EST√ÉO CORRETOS (S/N)*: S
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -343,16 +343,92 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // EXAMES E CONSULTAS AGENDADAS COM SUCESSO!
 
-// AGRADECEMOS A PREFER NCIA! :-)
+// AGRADECEMOS A PREFER√äNCIA! :-)
 
 //---------------------------------------------------------------------------------------------------------------------
 
 Var
-// SeÁ„o de DeclaraÁıes das vari·veis 
+// Vari√°veis
+
+//---------------------------------------------------------------------------------------------------------------------
+
+  // INTEIRO
+  
+   // C√ìDIGOS
+
+   Codigo_Procedimento, Codigo_Especialidade, Codigo_Combo   : Inteiro
+   Codigo_Exame, Codigo_Exame_Solicitado_Medico, Hora_Exame  : Inteiro
+   Indice, Indice_Especialidade, Indice_Combo, Indice_Exame  : Inteiro
+   Indice_Combo_Extra, Exame_Codigo_Menor, Exame_Codigo_Maior: Inteiro
+   Combo_Codigo_Menor, Combo_Codigo_Maior, Ano, Dia_Exame    : Inteiro
+   Dia_Sabado, Dia_Domingo, Numero_Mes_Atual, Codigo_Pgto    : Inteiro
+   Forma_Pgto, Codigo_Parcelamento, Codigo_Topico_Alteracao  : Inteiro
+   
+   // CONTADORAS E SOMADORAS
+  
+   i, j, Count, Count_Procedimento, Count_Especialidade      : Inteiro
+   Count_Exame, Count_Exame_Solicitado_Medico, Count_Combo   : Inteiro
+   
+   Qtd_Procedimento, Qtd_Especialidade, Qtd_Exame, Qtd_Combo : Inteiro
+   Qtd_Exame_Solicitado_Medico, Qtd_Exames_Combo_Extra       : Inteiro
+   Qtd_Agendamentos, Qtd_Exames_Combo                        : Inteiro
+
+//---------------------------------------------------------------------------------------------------------------------
+
+  // REAL
+  Valor_Total_Especialidade, Valor_Total_Exame, Valor_Total_Pix: Real
+  Valor_Total_Exame_Solicitado_Medico, Valor_Total_Combo       : Real
+  Valor_Total_Combo_Sugerido, Valor_Total, Valor_Total_Desconto: Real
+  Valor_Parcela, Preco_Combo_Sugerido, Desconto, Desconto_Bonus: Real
+
+//---------------------------------------------------------------------------------------------------------------------
+
+  // CARACTERE
+
+  Procedimento_Escolhido, Solicitado_Medico, Adiciona_Exame : Caractere
+  Exame_Combo_Sugerido, Todos_Exames_Medicos_Clinica, Nome  : Caractere
+  Adiciona_Combo, Adiciona_Procedimento, Nome_Mes_Atual, RG : Caractere
+  Dia_Inicial_Mes, Data_Nascimento, CPF, Genero, Cidade, UF : Caractere
+  Nome_Mae, Estado_Civil, Rua, Bairro, CEP, Telefone_Celular: Caractere
+  Numero_Residencia, Telefone_Contato, Email, Plano_Saude   : Caractere
+  Numero_Carteirinha, Titular_Plano, Autorizar_Permissoes   : Caractere
+  CPF_Titular, Usa_Medicamento, Possui_Alergia, Alergias    : Caractere
+  Medicamentos_Utilizados, Confirma_Dados_Corretos          : Caractere
+  Autoriza_Contato, Autoriza_Uso_Dados, Tipo_Atendimento    : Caractere
+
+//---------------------------------------------------------------------------------------------------------------------
+
+  // L√ìGICO
+
+  Exames_Combo, Codigo_Exame_Invalido, Horario_Indisponivel    : Logico
+  Especialidade_Disponivel, Parcela_3, Parcela_4, Erro_Dia     : Logico
+  Parcela_5, Parcela_6, Restringe_Parcela, Restringe_Parcela_3 : Logico
+  Restringe_Parcela_4, Restringe_Parcela_5, Cadastro_Finalizado: Logico
+  Restringe_Parcela_6, Confirma_Atendimento, Criar_Combo_Extra : Logico
+  Confirma_Dados_Pessoais, Confirma_Endereco, Confirma_Contato : Logico
+  Confirma_Forma_Pgto, Combo1, Combo2, Combo3, Combo4, Combo5  : Logico
+  Confirma_Informacoes_Adicionais, Confirma_Horario_Agendado   : Logico
+  Autorizacoes_Concedidas, Combo6, Combo7, Combo8, Combo9      : Logico
+  Exame_Multiplos_Combos, Combo10, Combo11, Combo12, Combo13   : Logico
+  Exames_Repetidos_Combo2_Combo3, Combo14, Combo15, Combo16    : Logico
+  Exames_Repetidos_Combo2_Combo5, , Combo17, Combo18, Combo19  : Logico
+  Exames_Repetidos_Combo2_Combo6, Combo20, Combo21, Combo22    : Logico
+  Exames_Repetidos_Combo2_Combo7, Erro_Sabado, Erro_Domingo    : Logico
+  Exames_Repetidos_Combo2_Combo9, Combo_Disponivel, Dia_31     : Logico
+  Exames_Repetidos_Combo2_Combo12, Continuar, Exame_Disponivel : Logico
+  Exames_Repetidos_Combo2_Combo20, Ano_Bissexto, Mes_Fevereiro : Logico
+  Exames_Repetidos_Combo11_Combo12, Codigo_Exame_Disponivel    : Logico
+  Exames_Repetidos_Combo17_Combo20, Exames_Solicitados_Medico  : Logico
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// Vetores
+
+//---------------------------------------------------------------------------------------------------------------------
 
 
 Inicio
-// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc... 
+// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
 
 
 Fimalgoritmo
