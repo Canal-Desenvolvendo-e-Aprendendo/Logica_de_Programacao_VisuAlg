@@ -2,7 +2,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // EXERCÍCIO 15 - EXAMES LABORATORIAIS
 
-// CRIAR UM ALGORITMO QUE SIMULE UMA CLÍNICA LABORATORIAL, NO QUAL,
+// CRIAR UM ALGORITMO QUE SIMULE UMA CL�NICA LABORATORIAL, NO QUAL,
 // PODE-SE SOLICITAR DIVERSOS EXAMES E/OU CONSULTAS UTILIZANDO O
 // CONVÊNIO OU SENDO PARTICULAR, E DEVERÁ SEGUIR AS SEGUINTES REGRAS:
 
@@ -249,7 +249,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // 32 - D-DÍMERO
 // 39 - FIBRINOGÉNIO
 // 50 - HEMOGRAMA COMPLETO
-// 70 - RETICULÓCITOS
+// 70 - RETICUL�CITOS
 // 81 - TROPONINA
 // 114 - VELOCIDADE DE SEDIMENTAÇÃO (VHS / VSG)
 
@@ -353,7 +353,7 @@ Var
 //---------------------------------------------------------------------------------------------------------------------
 
   // INTEIRO
-  
+
    // CÓDIGOS
 
    Codigo_Procedimento, Codigo_Especialidade, Codigo_Combo   : Inteiro
@@ -363,12 +363,12 @@ Var
    Combo_Codigo_Menor, Combo_Codigo_Maior, Ano, Dia_Exame    : Inteiro
    Dia_Sabado, Dia_Domingo, Numero_Mes_Atual, Codigo_Pgto    : Inteiro
    Forma_Pgto, Codigo_Parcelamento, Codigo_Topico_Alteracao  : Inteiro
-   
+
    // CONTADORAS E SOMADORAS
-  
+
    i, j, Count, Count_Procedimento, Count_Especialidade      : Inteiro
    Count_Exame, Count_Exame_Solicitado_Medico, Count_Combo   : Inteiro
-   
+
    Qtd_Procedimento, Qtd_Especialidade, Qtd_Exame, Qtd_Combo : Inteiro
    Qtd_Exame_Solicitado_Medico, Qtd_Exames_Combo_Extra       : Inteiro
    Qtd_Agendamentos, Qtd_Exames_Combo                        : Inteiro
@@ -429,41 +429,41 @@ Var
 //---------------------------------------------------------------------------------------------------------------------
 
    // DATA
-   
+
    Vet_Dia_Exame  : Vetor [0..51] de Inteiro
    Vet_Hora_Exame : Vetor [0..51] de Inteiro
    Vet_Dia_Sababo : Vetor [0..4] de Inteiro
    Vet_Dia_Domingo: Vetor [0..4] de Inteiro
-   
+
 //---------------------------------------------------------------------------------------------------------------------
 
   // ESPECIALIDADES
-  
+
   Vet_Codigo_Especialidade          : Vetor [0..30] de Inteiro
   Vet_Especialidades                : Vetor [0..30] de Caractere
   Vet_Preco_Especialidade           : Vetor [0..30] de Real
-  
+
   Vet_Especialidades_Escolhidas     : Vetor [0..29] de Caractere
   Vet_Preco_Especialidade_Escolhidas: Vetor [0..29] de Real
-  
+
   Vet_Nome_Medico                   : Vetor [0..29] de Caractere
   Vet_Especialidade_Exame           : Vetor [0..29] de Caractere
   Vet_Motivo_Procedimento           : Vetor [0..29] de Caractere
-  
+
 //---------------------------------------------------------------------------------------------------------------------
 
   // EXAMES
-  
+
   Vet_Codigo_Exame                  : Vetor [0..118] de Inteiro
   Vet_Exames                        : Vetor [0..118] de Caractere
   Vet_Preco_Exame                   : Vetor [0..118] de Real
   Vet_Preco_Exames_Combo            : Vetor [0..118] de Real
-  
+
   Vet_Codigo_Exames_Escolhidos      : Vetor [0..117] de Inteiro
   Vet_Exames_Escolhidos             : Vetor [0..117] de Caractere
   Vet_Preco_Exames_Escolhidos       : Vetor [0..117] de Real
   Vet_Codigo_Exames_Disponiveis     : Vetor [0..117] de Logico
-  
+
   Vet_Codigo_Exame_Solicitado_Medico: Vetor [0..117] de Inteiro
   Vet_Exames_Solicitados_Medico     : Vetor [0..117] de Caractere
   Vet_Preco_Exame_Solicitado_Medico : Vetor [0..117] de Real
@@ -471,7 +471,7 @@ Var
   Vet_Codigo_Exames_Combos_Extras   : Vetor [0..21] de Inteiro
   Vet_Exames_Combos_Extras          : Vetor [0..21] de Caractere
   Vet_Preco_Exames_Combos_Extras    : Vetor [0..21] de Real
-  
+
 //---------------------------------------------------------------------------------------------------------------------
 
   // COMBOS
@@ -486,7 +486,7 @@ Var
 
   Vet_Codigo_Combos_Sugeridos    : Vetor [0..23] de Inteiro
   Vet_Preco_Combos_Sugeridos     : Vetor [0..23] de Real
-  
+
 //---------------------------------------------------------------------------------------------------------------------
 
 // Matrizes
@@ -498,13 +498,13 @@ Var
 
 Inicio
   // COUNT
-  
+
   Count_Procedimento                  <- 0
   Count_Especialidade                 <- 0
   Count_Exame                         <- 0
   Count_Exame_Solicitado_Medico       <- 0
   Count_Combo                         <- 0
-  
+
   // QTD
 
   Qtd_Procedimento                    <- 0
@@ -515,7 +515,7 @@ Inicio
   Qtd_Exames_Combo_Extra              <- 0
   Qtd_Agendamentos                    <- 0
   Qtd_Exames_Combo                    <- 0
-  
+
   // VALOR
 
   Valor_Total_Especialidade           <- 0
@@ -571,38 +571,38 @@ Inicio
 
  //---------------------------------------------------------------------------------------------------------------------
 
- // VETOR DE ESPECIALIDADES - PREÇOS
+ // VETOR DE ESPECIALIDADES - PRE�OS
 
- Vet_Preco_Especialidades[1]  <- 120.00
- Vet_Preco_Especialidades[2]  <- 120.00
- Vet_Preco_Especialidades[3]  <- 100.00
- Vet_Preco_Especialidades[4]  <- 100.00
- Vet_Preco_Especialidades[5]  <- 120.00
- Vet_Preco_Especialidades[6]  <- 80.00
- Vet_Preco_Especialidades[7]  <- 130.00
- Vet_Preco_Especialidades[8]  <- 100.00
- Vet_Preco_Especialidades[9]  <- 120.00
- Vet_Preco_Especialidades[10] <- 120.00
- Vet_Preco_Especialidades[11] <- 120.00
- Vet_Preco_Especialidades[12] <- 120.00
- Vet_Preco_Especialidades[13] <- 90.00
- Vet_Preco_Especialidades[14] <- 140.00
- Vet_Preco_Especialidades[15] <- 120.00
- Vet_Preco_Especialidades[16] <- 120.00
- Vet_Preco_Especialidades[17] <- 80.00
- Vet_Preco_Especialidades[18] <- 80.00
- Vet_Preco_Especialidades[19] <- 120.00
- Vet_Preco_Especialidades[20] <- 150.00
- Vet_Preco_Especialidades[21] <- 120.00
- Vet_Preco_Especialidades[22] <- 90.00
- Vet_Preco_Especialidades[23] <- 100.00
- Vet_Preco_Especialidades[24] <- 100.00
- Vet_Preco_Especialidades[25] <- 90.00
- Vet_Preco_Especialidades[26] <- 120.00
- Vet_Preco_Especialidades[27] <- 80.00
- Vet_Preco_Especialidades[28] <- 150.00
- Vet_Preco_Especialidades[29] <- 130.00
- Vet_Preco_Especialidades[30] <- 120.00
+ Vet_Preco_Especialidade[1]  <- 120.00
+ Vet_Preco_Especialidade[2]  <- 120.00
+ Vet_Preco_Especialidade[3]  <- 100.00
+ Vet_Preco_Especialidade[4]  <- 100.00
+ Vet_Preco_Especialidade[5]  <- 120.00
+ Vet_Preco_Especialidade[6]  <- 80.00
+ Vet_Preco_Especialidade[7]  <- 130.00
+ Vet_Preco_Especialidade[8]  <- 100.00
+ Vet_Preco_Especialidade[9]  <- 120.00
+ Vet_Preco_Especialidade[10] <- 120.00
+ Vet_Preco_Especialidade[11] <- 120.00
+ Vet_Preco_Especialidade[12] <- 120.00
+ Vet_Preco_Especialidade[13] <- 90.00
+ Vet_Preco_Especialidade[14] <- 140.00
+ Vet_Preco_Especialidade[15] <- 120.00
+ Vet_Preco_Especialidade[16] <- 120.00
+ Vet_Preco_Especialidade[17] <- 80.00
+ Vet_Preco_Especialidade[18] <- 80.00
+ Vet_Preco_Especialidade[19] <- 120.00
+ Vet_Preco_Especialidade[20] <- 150.00
+ Vet_Preco_Especialidade[21] <- 120.00
+ Vet_Preco_Especialidade[22] <- 90.00
+ Vet_Preco_Especialidade[23] <- 100.00
+ Vet_Preco_Especialidade[24] <- 100.00
+ Vet_Preco_Especialidade[25] <- 90.00
+ Vet_Preco_Especialidade[26] <- 120.00
+ Vet_Preco_Especialidade[27] <- 80.00
+ Vet_Preco_Especialidade[28] <- 150.00
+ Vet_Preco_Especialidade[29] <- 130.00
+ Vet_Preco_Especialidade[30] <- 120.00
 
  //---------------------------------------------------------------------------------------------------------------------
 
@@ -732,124 +732,124 @@ Inicio
 
  // VETOR DE EXAMES - PREÇOS
 
- Vet_Preco_Exames[1]   <- 50.00
- Vet_Preco_Exames[2]   <- 50.00
- Vet_Preco_Exames[3]   <- 100.00
- Vet_Preco_Exames[4]   <- 50.00
- Vet_Preco_Exames[5]   <- 50.00
- Vet_Preco_Exames[6]   <- 50.00
- Vet_Preco_Exames[7]   <- 80.00
- Vet_Preco_Exames[8]   <- 70.00
- Vet_Preco_Exames[9]   <- 70.00
- Vet_Preco_Exames[10]  <- 100.00
- Vet_Preco_Exames[11]  <- 50.00
- Vet_Preco_Exames[12]  <- 50.00
- Vet_Preco_Exames[13]  <- 50.00
- Vet_Preco_Exames[14]  <- 50.00
- Vet_Preco_Exames[15]  <- 140.00
- Vet_Preco_Exames[16]  <- 1000.00
- Vet_Preco_Exames[17]  <- 90.00
- Vet_Preco_Exames[18]  <- 90.00
- Vet_Preco_Exames[19]  <- 90.00
- Vet_Preco_Exames[20]  <- 60.00
- Vet_Preco_Exames[21]  <- 80.00
- Vet_Preco_Exames[22]  <- 60.00
- Vet_Preco_Exames[23]  <- 50.00
- Vet_Preco_Exames[24]  <- 60.00
- Vet_Preco_Exames[25]  <- 50.00
- Vet_Preco_Exames[26]  <- 50.00
- Vet_Preco_Exames[27]  <- 50.00
- Vet_Preco_Exames[28]  <- 55.00
- Vet_Preco_Exames[29]  <- 60.00
- Vet_Preco_Exames[30]  <- 50.00
- Vet_Preco_Exames[31]  <- 60.00
- Vet_Preco_Exames[32]  <- 100.00
- Vet_Preco_Exames[33]  <- 80.00
- Vet_Preco_Exames[34]  <- 150.00
- Vet_Preco_Exames[35]  <- 80.00
- Vet_Preco_Exames[36]  <- 60.00
- Vet_Preco_Exames[37]  <- 50.00
- Vet_Preco_Exames[38]  <- 55.00
- Vet_Preco_Exames[39]  <- 50.00
- Vet_Preco_Exames[40]  <- 50.00
- Vet_Preco_Exames[41]  <- 50.00
- Vet_Preco_Exames[42]  <- 50.00
- Vet_Preco_Exames[43]  <- 50.00
- Vet_Preco_Exames[44]  <- 50.00
- Vet_Preco_Exames[45]  <- 50.00
- Vet_Preco_Exames[46]  <- 50.00
- Vet_Preco_Exames[47]  <- 50.00
- Vet_Preco_Exames[48]  <- 50.00
- Vet_Preco_Exames[49]  <- 50.00
- Vet_Preco_Exames[50]  <- 50.00
- Vet_Preco_Exames[51]  <- 50.00
- Vet_Preco_Exames[52]  <- 110.00
- Vet_Preco_Exames[53]  <- 50.00
- Vet_Preco_Exames[54]  <- 270.00
- Vet_Preco_Exames[55]  <- 100.00
- Vet_Preco_Exames[56]  <- 90.00
- Vet_Preco_Exames[57]  <- 50.00
- Vet_Preco_Exames[58]  <- 270.00
- Vet_Preco_Exames[59]  <- 50.00
- Vet_Preco_Exames[60]  <- 50.00
- Vet_Preco_Exames[61]  <- 50,00
- Vet_Preco_Exames[62]  <- 170.00
- Vet_Preco_Exames[63]  <- 220.00
- Vet_Preco_Exames[64]  <- 50.00
- Vet_Preco_Exames[65]  <- 140.00
- Vet_Preco_Exames[66]  <- 140.00
- Vet_Preco_Exames[67]  <- 50.00
- Vet_Preco_Exames[68]  <- 50.00
- Vet_Preco_Exames[69]  <- 50.00
- Vet_Preco_Exames[70]  <- 50.00
- Vet_Preco_Exames[71]  <- 50.00
- Vet_Preco_Exames[72]  <- 50.00
- Vet_Preco_Exames[73]  <- 55.00
- Vet_Preco_Exames[74]  <- 55.00
- Vet_Preco_Exames[75]  <- 420.00
- Vet_Preco_Exames[76]  <- 320.00
- Vet_Preco_Exames[77]  <- 140.00
- Vet_Preco_Exames[78]  <- 60.00
- Vet_Preco_Exames[79]  <- 50.00
- Vet_Preco_Exames[80]  <- 60.00
- Vet_Preco_Exames[81]  <- 50.00
- Vet_Preco_Exames[82]  <- 80.00
- Vet_Preco_Exames[83]  <- 50.00
- Vet_Preco_Exames[84]  <- 110.00
- Vet_Preco_Exames[85]  <- 120.00
- Vet_Preco_Exames[86]  <- 110.00
- Vet_Preco_Exames[87]  <- 100.00
- Vet_Preco_Exames[88]  <- 110.00
- Vet_Preco_Exames[89]  <- 110.00
- Vet_Preco_Exames[90]  <- 140.00
- Vet_Preco_Exames[91]  <- 100.00
- Vet_Preco_Exames[92]  <- 100.00
- Vet_Preco_Exames[93]  <- 120.00
- Vet_Preco_Exames[94]  <- 110.00
- Vet_Preco_Exames[95]  <- 120.00
- Vet_Preco_Exames[96]  <- 110.00
- Vet_Preco_Exames[97]  <- 100.00
- Vet_Preco_Exames[98]  <- 100.00
- Vet_Preco_Exames[99]  <- 110.00
- Vet_Preco_Exames[100] <- 200.00
- Vet_Preco_Exames[101] <- 200.00
- Vet_Preco_Exames[102] <- 200.00
- Vet_Preco_Exames[103] <- 110.00
- Vet_Preco_Exames[104] <- 110.00
- Vet_Preco_Exames[105] <- 120.00
- Vet_Preco_Exames[106] <- 120.00
- Vet_Preco_Exames[107] <- 200.00
- Vet_Preco_Exames[108] <- 170.00
- Vet_Preco_Exames[109] <- 110.00
- Vet_Preco_Exames[110] <- 120.00
- Vet_Preco_Exames[111] <- 110.00
- Vet_Preco_Exames[112] <- 110.00
- Vet_Preco_Exames[113] <- 140.00
- Vet_Preco_Exames[114] <- 50.00
- Vet_Preco_Exames[115] <- 50.00
- Vet_Preco_Exames[116] <- 55.00
- Vet_Preco_Exames[117] <- 60.00
- Vet_Preco_Exames[118] <- 60.00
+ Vet_Preco_Exame[1]   <- 50.00
+ Vet_Preco_Exame[2]   <- 50.00
+ Vet_Preco_Exame[3]   <- 100.00
+ Vet_Preco_Exame[4]   <- 50.00
+ Vet_Preco_Exame[5]   <- 50.00
+ Vet_Preco_Exame[6]   <- 50.00
+ Vet_Preco_Exame[7]   <- 80.00
+ Vet_Preco_Exame[8]   <- 70.00
+ Vet_Preco_Exame[9]   <- 70.00
+ Vet_Preco_Exame[10]  <- 100.00
+ Vet_Preco_Exame[11]  <- 50.00
+ Vet_Preco_Exame[12]  <- 50.00
+ Vet_Preco_Exame[13]  <- 50.00
+ Vet_Preco_Exame[14]  <- 50.00
+ Vet_Preco_Exame[15]  <- 140.00
+ Vet_Preco_Exame[16]  <- 1000.00
+ Vet_Preco_Exame[17]  <- 90.00
+ Vet_Preco_Exame[18]  <- 90.00
+ Vet_Preco_Exame[19]  <- 90.00
+ Vet_Preco_Exame[20]  <- 60.00
+ Vet_Preco_Exame[21]  <- 80.00
+ Vet_Preco_Exame[22]  <- 60.00
+ Vet_Preco_Exame[23]  <- 50.00
+ Vet_Preco_Exame[24]  <- 60.00
+ Vet_Preco_Exame[25]  <- 50.00
+ Vet_Preco_Exame[26]  <- 50.00
+ Vet_Preco_Exame[27]  <- 50.00
+ Vet_Preco_Exame[28]  <- 55.00
+ Vet_Preco_Exame[29]  <- 60.00
+ Vet_Preco_Exame[30]  <- 50.00
+ Vet_Preco_Exame[31]  <- 60.00
+ Vet_Preco_Exame[32]  <- 100.00
+ Vet_Preco_Exame[33]  <- 80.00
+ Vet_Preco_Exame[34]  <- 150.00
+ Vet_Preco_Exame[35]  <- 80.00
+ Vet_Preco_Exame[36]  <- 60.00
+ Vet_Preco_Exame[37]  <- 50.00
+ Vet_Preco_Exame[38]  <- 55.00
+ Vet_Preco_Exame[39]  <- 50.00
+ Vet_Preco_Exame[40]  <- 50.00
+ Vet_Preco_Exame[41]  <- 50.00
+ Vet_Preco_Exame[42]  <- 50.00
+ Vet_Preco_Exame[43]  <- 50.00
+ Vet_Preco_Exame[44]  <- 50.00
+ Vet_Preco_Exame[45]  <- 50.00
+ Vet_Preco_Exame[46]  <- 50.00
+ Vet_Preco_Exame[47]  <- 50.00
+ Vet_Preco_Exame[48]  <- 50.00
+ Vet_Preco_Exame[49]  <- 50.00
+ Vet_Preco_Exame[50]  <- 50.00
+ Vet_Preco_Exame[51]  <- 50.00
+ Vet_Preco_Exame[52]  <- 110.00
+ Vet_Preco_Exame[53]  <- 50.00
+ Vet_Preco_Exame[54]  <- 270.00
+ Vet_Preco_Exame[55]  <- 100.00
+ Vet_Preco_Exame[56]  <- 90.00
+ Vet_Preco_Exame[57]  <- 50.00
+ Vet_Preco_Exame[58]  <- 270.00
+ Vet_Preco_Exame[59]  <- 50.00
+ Vet_Preco_Exame[60]  <- 50.00
+ Vet_Preco_Exame[61]  <- 50,00
+ Vet_Preco_Exame[62]  <- 170.00
+ Vet_Preco_Exame[63]  <- 220.00
+ Vet_Preco_Exame[64]  <- 50.00
+ Vet_Preco_Exame[65]  <- 140.00
+ Vet_Preco_Exame[66]  <- 140.00
+ Vet_Preco_Exame[67]  <- 50.00
+ Vet_Preco_Exame[68]  <- 50.00
+ Vet_Preco_Exame[69]  <- 50.00
+ Vet_Preco_Exame[70]  <- 50.00
+ Vet_Preco_Exame[71]  <- 50.00
+ Vet_Preco_Exame[72]  <- 50.00
+ Vet_Preco_Exame[73]  <- 55.00
+ Vet_Preco_Exame[74]  <- 55.00
+ Vet_Preco_Exame[75]  <- 420.00
+ Vet_Preco_Exame[76]  <- 320.00
+ Vet_Preco_Exame[77]  <- 140.00
+ Vet_Preco_Exame[78]  <- 60.00
+ Vet_Preco_Exame[79]  <- 50.00
+ Vet_Preco_Exame[80]  <- 60.00
+ Vet_Preco_Exame[81]  <- 50.00
+ Vet_Preco_Exame[82]  <- 80.00
+ Vet_Preco_Exame[83]  <- 50.00
+ Vet_Preco_Exame[84]  <- 110.00
+ Vet_Preco_Exame[85]  <- 120.00
+ Vet_Preco_Exame[86]  <- 110.00
+ Vet_Preco_Exame[87]  <- 100.00
+ Vet_Preco_Exame[88]  <- 110.00
+ Vet_Preco_Exame[89]  <- 110.00
+ Vet_Preco_Exame[90]  <- 140.00
+ Vet_Preco_Exame[91]  <- 100.00
+ Vet_Preco_Exame[92]  <- 100.00
+ Vet_Preco_Exame[93]  <- 120.00
+ Vet_Preco_Exame[94]  <- 110.00
+ Vet_Preco_Exame[95]  <- 120.00
+ Vet_Preco_Exame[96]  <- 110.00
+ Vet_Preco_Exame[97]  <- 100.00
+ Vet_Preco_Exame[98]  <- 100.00
+ Vet_Preco_Exame[99]  <- 110.00
+ Vet_Preco_Exame[100] <- 200.00
+ Vet_Preco_Exame[101] <- 200.00
+ Vet_Preco_Exame[102] <- 200.00
+ Vet_Preco_Exame[103] <- 110.00
+ Vet_Preco_Exame[104] <- 110.00
+ Vet_Preco_Exame[105] <- 120.00
+ Vet_Preco_Exame[106] <- 120.00
+ Vet_Preco_Exame[107] <- 200.00
+ Vet_Preco_Exame[108] <- 170.00
+ Vet_Preco_Exame[109] <- 110.00
+ Vet_Preco_Exame[110] <- 120.00
+ Vet_Preco_Exame[111] <- 110.00
+ Vet_Preco_Exame[112] <- 110.00
+ Vet_Preco_Exame[113] <- 140.00
+ Vet_Preco_Exame[114] <- 50.00
+ Vet_Preco_Exame[115] <- 50.00
+ Vet_Preco_Exame[116] <- 55.00
+ Vet_Preco_Exame[117] <- 60.00
+ Vet_Preco_Exame[118] <- 60.00
 
  //---------------------------------------------------------------------------------------------------------------------
 
@@ -949,19 +949,19 @@ Inicio
  Mat_Combo_Exames[12,3] <- Vet_Exames[33]
  Mat_Combo_Exames[12,4] <- Vet_Exames[56]
  Mat_Combo_Exames[12,5] <- Vet_Exames[57]
- Mat_Combo_Exames[13,0] <- " COMBO 13 - PERFIL LIPÍDICO                                            		                         "
+ Mat_Combo_Exames[13,0] <- " COMBO 13 - PERFIL LIP�DICO                                            		                         "
  Mat_Combo_Exames[13,1] <- Vet_Exames[10]
  Mat_Combo_Exames[13,2] <- Vet_Exames[25]
  Mat_Combo_Exames[13,3] <- Vet_Exames[47]
  Mat_Combo_Exames[13,4] <- Vet_Exames[59]
  Mat_Combo_Exames[13,5] <- Vet_Exames[81]
- Mat_Combo_Exames[14,0] <- " COMBO 14 - TIREÓIDE                                                   		                         "
+ Mat_Combo_Exames[14,0] <- " COMBO 14 - TIRE�IDE                                                   		                         "
  Mat_Combo_Exames[14,1] <- Vet_Exames[8]
  Mat_Combo_Exames[14,2] <- Vet_Exames[9]
  Mat_Combo_Exames[14,3] <- Vet_Exames[73]
  Mat_Combo_Exames[14,4] <- Vet_Exames[74]
  Mat_Combo_Exames[14,5] <- Vet_Exames[83]
- Mat_Combo_Exames[15,0] <- " COMBO 15 - ULTRASSONOGRAFIA - ABDOME E ÓRGÃOS DIGESTIVOS              		                         "
+ Mat_Combo_Exames[15,0] <- " COMBO 15 - ULTRASSONOGRAFIA - ABDOME E �RG�OS DIGESTIVOS              		                         "
  Mat_Combo_Exames[15,1] <- Vet_Exames[84]
  Mat_Combo_Exames[15,2] <- Vet_Exames[85]
  Mat_Combo_Exames[15,3] <- Vet_Exames[88]
@@ -969,11 +969,11 @@ Inicio
  Mat_Combo_Exames[15,5] <- Vet_Exames[97]
  Mat_Combo_Exames[15,6] <- Vet_Exames[98]
  Mat_Combo_Exames[15,7] <- Vet_Exames[99]
- Mat_Combo_Exames[16,0] <- " COMBO 16 - ULTRASSONOGRAFIA - SISTEMA URINÁRIO                        		                         "
+ Mat_Combo_Exames[16,0] <- " COMBO 16 - ULTRASSONOGRAFIA - SISTEMA URIN�RIO                        		                         "
  Mat_Combo_Exames[16,1] <- Vet_Exames[87]
  Mat_Combo_Exames[16,2] <- Vet_Exames[94]
  Mat_Combo_Exames[16,3] <- Vet_Exames[112]
- Mat_Combo_Exames[17,0] <- " COMBO 17 - ULTRASSONOGRAFIA - PRÓSTATA E SISTEMA REPRODUTOR MASCULINO 		                         "
+ Mat_Combo_Exames[17,0] <- " COMBO 17 - ULTRASSONOGRAFIA - PR�STATA E SISTEMA REPRODUTOR MASCULINO 		                         "
  Mat_Combo_Exames[17,1] <- Vet_Exames[90]
  Mat_Combo_Exames[17,2] <- Vet_Exames[91]
  Mat_Combo_Exames[17,3] <- Vet_Exames[104]
@@ -982,11 +982,11 @@ Inicio
  Mat_Combo_Exames[18,1] <- Vet_Exames[93]
  Mat_Combo_Exames[18,2] <- Vet_Exames[110]
  Mat_Combo_Exames[18,3] <- Vet_Exames[111]
- Mat_Combo_Exames[19,0] <- " COMBO 19 - ULTRASSONOGRAFIA - OBSTETRÍCIA                             		                         "
+ Mat_Combo_Exames[19,0] <- " COMBO 19 - ULTRASSONOGRAFIA - OBSTETR�CIA                             		                         "
  Mat_Combo_Exames[19,1] <- Vet_Exames[106]
  Mat_Combo_Exames[19,2] <- Vet_Exames[107]
  Mat_Combo_Exames[19,3] <- Vet_Exames[108]
- Mat_Combo_Exames[20,0] <- " COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUELÉTICO E PARTES MOLES       		                         "
+ Mat_Combo_Exames[20,0] <- " COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL�TICO E PARTES MOLES       		                         "
  Mat_Combo_Exames[20,1] <- Vet_Exames[95]
  Mat_Combo_Exames[20,2] <- Vet_Exames[96]
  Mat_Combo_Exames[20,3] <- Vet_Exames[104]
@@ -1008,13 +1008,13 @@ Inicio
 
  //---------------------------------------------------------------------------------------------------------------------
 
- // VETOR DE COMBOS DE EXAMES - PREÇOS
+ // VETOR DE COMBOS DE EXAMES - PRE�OS
  
  para i de 1 ate 118 faca
-   Vet_Preco_Exames_Combo[i] <- Vet_Preco_Exames[i]
+   Vet_Preco_Combo_Exames[i] <- Vet_Preco_Exame[i]
    
-   se (Vet_Preco_Exames[i] > 50) entao
-     Vet_Preco_Exames_Combo[i] <- Vet_Preco_Exames_Combo[i] - 10
+   se (Vet_Preco_Combo_Exames[i] > 50) entao
+     Vet_Preco_Combo_Exames[i] <- Vet_Preco_Combo_Exames[i] - 10
    fimse
  fimpara
 
@@ -1043,7 +1043,7 @@ Inicio
 
  //---------------------------------------------------------------------------------------------------------------------
 
- // DATA
+ // DATA - LIVRE PARA ESCOLHER
  
  Nome_Mes_Atual   <- " NOMEDOMES "
  Numero_Mes_Atual <- 1
@@ -1052,6 +1052,257 @@ Inicio
 
  //---------------------------------------------------------------------------------------------------------------------
 
+ repita
+   escreval("---------------------------------------------- PROCEDIMENTOS DISPON�VEIS --------------------------------------------")
+   escreval
+   
+   para i de 0 ate 3 faca
+     escreval(Vet_Procedimentos[i])
+   fimpara
+   
+   escreval
+   escreval("---------------------------------------------------------------------------------------------------------------------")
+   escreval
+   
+   escreva(" DIGITE O C�DIGO DO PROCEDIMENTO: ")
+   leia(Codigo_Procedimento)
+   
+   enquanto ((Codigo_Procedimento < 0) ou (Codigo_Procedimento > 3)) faca
+     escreval
+     escreval("---------------------------------------------------------------------------------------------------------------------")
+     escreval
+     escreval(" C�DIGO INV�LIDO!")
+     escreva(" DIGITE NOVAMENTE O C�DIGO DO PROCEDIMENTO: ")
+     leia(Codigo_Procedimento)
+   fimenquanto
+   
+   escreval
 
+ ate ()
+
+
+//------------------------------------------------- TELA DE CONFIRMA��O -----------------------------------------------
+
+// 1. DADOS PESSOAIS
+
+// NOME                            : PRISCILA MARTINS
+// DATA DE NASCIMENTO              : 20/10/1990
+// CPF                             : 123.456.789-10
+// RG                              : 12.345.678-9
+// NOME DA M�E                     : FERNANDA MARTINS ROCHA
+// G�NERO                          : FEMININO
+// ESTADO CIVIL                    : SOLTEIRO/A
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 2. ENDERE�O
+
+// AVENIDA BRASIL, 123 - RESIDENCIAL BRASIL
+// S�O PAULO - SP - CEP: 12345-678
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 3. CONTATO
+
+// TELEFONE CELULAR                : (11) 91234-5678
+// E-MAIL                          : PRISCILA_MARTINS@EMAIL.COM
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 4. ATENDIMENTO
+
+// TIPO DE ATENDIMENTO             : CONSULTA(S) + EXAME(S)
+
+---------------------------------------------------------------------------------------------------------------------
+
+// ESPECIALIDADE                   : 3 - CARDIOLOGIA
+// M�DICO(A) SOLICITANTE           : DR. FERNANDO GARC�A
+// MOTIVO DA CONSULTA              : REALIZA��O DE CHECK-UP GERAL (AVALIA��O CL�NICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI��ES DE SA�DE ANTES DO IN�CIO DE ESTRAT�GIA DE CUTTING (REDU��O DE GORDURA CORPORAL).
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// ESPECIALIDADE                   : 9 - ENDOCRINOLOGIA
+// M�DICO(A) SOLICITANTE           : DRA. GISELE FERNANDES
+// MOTIVO DA CONSULTA              : REALIZA��O DE CHECK-UP GERAL (AVALIA��O CL�NICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI��ES DE SA�DE ANTES DO IN�CIO DE ESTRAT�GIA DE CUTTING (REDU��O DE GORDURA CORPORAL).
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// ESPECIALIDADE                   : 23 - ORTOPEDIA E TRAUMATOLOGIA
+// M�DICO(A) SOLICITANTE           : DR. PEDRO ALVES
+// MOTIVO DA CONSULTA              : REALIZA��O DE CHECK-UP GERAL (AVALIA��O CL�NICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI��ES DE SA�DE ANTES DO IN�CIO DE ESTRAT�GIA DE CUTTING (REDU��O DE GORDURA CORPORAL).
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 5. HOR�RIO AGENDADO:
+
+//--------------------------------------------- ESPECIALIDADES ESCOLHIDAS ---------------------------------------------
+
+// 3 - CARDIOLOGIA
+//     DIA DO AGENDAMENTO: 10/ 5/ 2027 - 17:00
+
+
+// 9 - ENDOCRINOLOGIA
+//     DIA DO AGENDAMENTO: 17/ 5/ 2027 - 8:00
+
+
+// 23 - ORTOPEDIA E TRAUMATOLOGIA
+//     DIA DO AGENDAMENTO: 20/ 5/ 2027 - 8:00
+
+//-------------------------------------------------- COMBOS ESCOLHIDOS ------------------------------------------------
+
+// COMBO 1 - CARDIOLOGIA E RISCO CARDIOVASCULAR                          		                          | R$ 480.00
+// COMBO 2 - ESPECIAL FIT                                                		                          | R$ 832.50
+// COMBO 7 - HEMATOLOGIA (SANGUE E C�LULAS)                              		                          | R$ 520.00
+// COMBO 8 - HORMONAS SEXUAIS                                            		                          | R$ 300.00
+// COMBO 9 - IMUNOLOGIA E SEROLOGIA                                      		                          | R$ 615.00
+// COMBO 11 - METABOLISMO E ENERGIA                                      		                          | R$ 225.00
+// COMBO 12 - OUTRAS HORMONAS                                            		                          | R$ 252.50
+// COMBO 13 - PERFIL LIP�DICO                                            		                          | R$ 290.00
+// COMBO 14 - TIRE�IDE                                                   		                          | R$ 260.00
+// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL�TICO E PARTES MOLES       		                          | R$ 260.00
+// COMBO 22 - VITAMINAS E MINERAIS                                       		                          | R$ 440.00
+// COMBO 23 - EXTRA
+
+//---------------------------------------------------------------------------------------------------------------------
+                                                                               | R$ 260.00
+//   DIA DO AGENDAMENTO: 24/ 5/ 2027 - 9:00
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// EXAMES DE SANGUE N�O PRECISAM DE AGENDAMENTO.
+// ATENDIMENTO REALIZADO POR ORDEM DE CHEGADA.
+// RECOMENDAMOS JEJUM CONFORME ORIENTA��O M�DICA.
+
+// HOR�RIO DE COLETA: DE SEGUNDA A S�BADO, DAS 7H �S 11H.
+
+// OBS.: TRAZER DOCUMENTO DE IDENTIFICA��O E PEDIDO M�DICO (SE HOUVER).
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// JEJUM DE 8�12 HORAS (IDEAL FAZER JUNTOS):
+
+// 1 - �CIDO F�LICO
+// 10 - APOLIPOPROTE�NAS A E B
+// 20 - C�LCIO
+// 25 - COLESTEROL TOTAL
+// 37 - FERRITINA
+// 38 - FERRO
+// 40 - F�SFORO
+// 46 - HDL
+// 54 - HOMOCISTE�NA
+// 58 - LDL
+// 60 - MAGN�SIO
+// 80 - TRIGLIC�RIDOS
+// 115 - VITAMINA B12
+// 116 - VITAMINA D
+// 117 - ZINCO
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// SEM JEJUM (PODE FAZER JUNTO COM OS EXAMES QUE EXIGEM O JEJUM):
+
+// 15 - BNP
+// 23 - CK-MB
+// 24 - COAGULOGRAMA (TP, INR, TTPA)
+// 32 - D-D�MERO
+// 39 - FIBRINOG�NIO
+// 50 - HEMOGRAMA COMPLETO
+// 70 - RETICUL�CITOS
+// 81 - TROPONINA
+// 114 - VELOCIDADE DE SEDIMENTA��O (VHS / VSG)
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 6. INFORMA��ES ADICIONAIS
+
+// USA MEDICAMENTOS (S/N)?         : N
+// TEM ALERGIA A ALGUM MEDICAMENTO?: S - ASPIRINA
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 7. FORMA DE PAGAMENTO
+
+// 3 - CARDIOLOGIA                                                        	                                | R$  100.00
+// 9 - ENDOCRINOLOGIA                                                     	                                | R$  120.00
+// 23 - ORTOPEDIA E TRAUMATOLOGIA                                         	                                | R$  100.00
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// VALOR TOTAL DA(S) CONSULTA(S)                                                                           | R$  320.00
+// TOTAL DE CONSULTAS                                                                                      | 3
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// COMBO 1 - CARDIOLOGIA E RISCO CARDIOVASCULAR                          		                             | R$  480.00
+// COMBO 2 - ESPECIAL FIT                                                		                             | R$  832.50
+// COMBO 7 - HEMATOLOGIA (SANGUE E C�LULAS)                              		                             | R$  520.00
+// COMBO 8 - HORMONAS SEXUAIS                                            		                             | R$  300.00
+// COMBO 9 - IMUNOLOGIA E SEROLOGIA                                      		                             | R$  615.00
+// COMBO 11 - METABOLISMO E ENERGIA                                      		                             | R$  225.00
+// COMBO 12 - OUTRAS HORMONAS                                            		                             | R$  252.50
+// COMBO 13 - PERFIL LIP�DICO                                            		                             | R$  290.00
+// COMBO 14 - TIRE�IDE                                                   		                             | R$  260.00
+// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL�TICO E PARTES MOLES       		                             | R$  260.00
+// COMBO 22 - VITAMINAS E MINERAIS                                       		                             | R$  440.00
+// COMBO 23 - EXTRA                                                                                        | R$  450.00
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// VALOR TOTAL DO(S) COMBO(S) S/ DESCONTO                                                                  | R$ 4925.00
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// DESCONTO                                                                                                | R$  246.25
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// VALOR TOTAL DO(S) COMBO(S)                                                                              | R$ 4678.75
+// TOTAL DE COMBO(S)                                                                                       | 12
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// VALOR TOTAL (CONSULTA(S) + COMBO(S))                                                                    | R$ 4998.75
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// DESCONTO (B�NUS)                                                                                        | R$  249.94
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// VALOR TOTAL                                                                                             | R$ 4748.81
+
+// TOTAL DE PROCEDIMENTO(S)                                                                                | 15
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// OBA! VOC� REALIZOU TODOS OS EXAMES SOLICITADOS PELO(S) M�DICO(S) DA CL�NICA CONOSCO E GANHOU UM B�NUS DE 5% DE
+// DESCONTO NO VALOR TOTAL (CONSULTA(S) + EXAME(S))!
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// VOC� ECONOMIZOU R$ 496.19
+
+// FORMA DE PAGAMENTO: CART�O DE CR�DITO - 6x DE R$ 791.47 - R$ 4748.81
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// 8. CONSENTIMENTOS
+
+// [S] AUTORIZO O USO DOS MEUS DADOS PARA ATENDIMENTO M�DICO CONFORME LGPD
+// [S] AUTORIZO CONTATO VIA TELEFONE/WHATSAPP/E-MAIL
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// OS DADOS ACIMA EST�O CORRETOS (S/N)*: S
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// PAGAMENTO APROVADO!
+
+// EXAMES E CONSULTAS AGENDADAS COM SUCESSO!
+
+// AGRADECEMOS A PREFER�NCIA! :-)
+
+//---------------------------------------------------------------------------------------------------------------------
 
 Fimalgoritmo
