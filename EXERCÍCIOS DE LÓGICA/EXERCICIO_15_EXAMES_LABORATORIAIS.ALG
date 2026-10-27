@@ -2,7 +2,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 
 // EXERCÍCIO 15 - EXAMES LABORATORIAIS
 
-// CRIAR UM ALGORITMO QUE SIMULE UMA CL�NICA LABORATORIAL, NO QUAL,
+// CRIAR UM ALGORITMO QUE SIMULE UMA CLÍNICA LABORATORIAL, NO QUAL,
 // PODE-SE SOLICITAR DIVERSOS EXAMES E/OU CONSULTAS UTILIZANDO O
 // CONVÊNIO OU SENDO PARTICULAR, E DEVERÁ SEGUIR AS SEGUINTES REGRAS:
 
@@ -249,7 +249,7 @@ Algoritmo "Exercicio_15_Exames_Laboratoriais"
 // 32 - D-DÍMERO
 // 39 - FIBRINOGÉNIO
 // 50 - HEMOGRAMA COMPLETO
-// 70 - RETICUL�CITOS
+// 70 - RETICULÓCITOS
 // 81 - TROPONINA
 // 114 - VELOCIDADE DE SEDIMENTAÇÃO (VHS / VSG)
 
@@ -571,7 +571,7 @@ Inicio
 
  //---------------------------------------------------------------------------------------------------------------------
 
- // VETOR DE ESPECIALIDADES - PRE�OS
+ // VETOR DE ESPECIALIDADES - PREÇOS
 
  Vet_Preco_Especialidade[1]  <- 120.00
  Vet_Preco_Especialidade[2]  <- 120.00
@@ -949,19 +949,19 @@ Inicio
  Mat_Combo_Exames[12,3] <- Vet_Exames[33]
  Mat_Combo_Exames[12,4] <- Vet_Exames[56]
  Mat_Combo_Exames[12,5] <- Vet_Exames[57]
- Mat_Combo_Exames[13,0] <- " COMBO 13 - PERFIL LIP�DICO                                            		                         "
+ Mat_Combo_Exames[13,0] <- " COMBO 13 - PERFIL LIPÍDICO                                            		                         "
  Mat_Combo_Exames[13,1] <- Vet_Exames[10]
  Mat_Combo_Exames[13,2] <- Vet_Exames[25]
  Mat_Combo_Exames[13,3] <- Vet_Exames[47]
  Mat_Combo_Exames[13,4] <- Vet_Exames[59]
  Mat_Combo_Exames[13,5] <- Vet_Exames[81]
- Mat_Combo_Exames[14,0] <- " COMBO 14 - TIRE�IDE                                                   		                         "
+ Mat_Combo_Exames[14,0] <- " COMBO 14 - TIREÓIDE                                                   		                         "
  Mat_Combo_Exames[14,1] <- Vet_Exames[8]
  Mat_Combo_Exames[14,2] <- Vet_Exames[9]
  Mat_Combo_Exames[14,3] <- Vet_Exames[73]
  Mat_Combo_Exames[14,4] <- Vet_Exames[74]
  Mat_Combo_Exames[14,5] <- Vet_Exames[83]
- Mat_Combo_Exames[15,0] <- " COMBO 15 - ULTRASSONOGRAFIA - ABDOME E �RG�OS DIGESTIVOS              		                         "
+ Mat_Combo_Exames[15,0] <- " COMBO 15 - ULTRASSONOGRAFIA - ABDOME E ÓRGÃOS DIGESTIVOS              		                         "
  Mat_Combo_Exames[15,1] <- Vet_Exames[84]
  Mat_Combo_Exames[15,2] <- Vet_Exames[85]
  Mat_Combo_Exames[15,3] <- Vet_Exames[88]
@@ -969,11 +969,11 @@ Inicio
  Mat_Combo_Exames[15,5] <- Vet_Exames[97]
  Mat_Combo_Exames[15,6] <- Vet_Exames[98]
  Mat_Combo_Exames[15,7] <- Vet_Exames[99]
- Mat_Combo_Exames[16,0] <- " COMBO 16 - ULTRASSONOGRAFIA - SISTEMA URIN�RIO                        		                         "
+ Mat_Combo_Exames[16,0] <- " COMBO 16 - ULTRASSONOGRAFIA - SISTEMA URINÁRIO                        		                         "
  Mat_Combo_Exames[16,1] <- Vet_Exames[87]
  Mat_Combo_Exames[16,2] <- Vet_Exames[94]
  Mat_Combo_Exames[16,3] <- Vet_Exames[112]
- Mat_Combo_Exames[17,0] <- " COMBO 17 - ULTRASSONOGRAFIA - PR�STATA E SISTEMA REPRODUTOR MASCULINO 		                         "
+ Mat_Combo_Exames[17,0] <- " COMBO 17 - ULTRASSONOGRAFIA - PRÓSTATA E SISTEMA REPRODUTOR MASCULINO 		                         "
  Mat_Combo_Exames[17,1] <- Vet_Exames[90]
  Mat_Combo_Exames[17,2] <- Vet_Exames[91]
  Mat_Combo_Exames[17,3] <- Vet_Exames[104]
@@ -982,11 +982,11 @@ Inicio
  Mat_Combo_Exames[18,1] <- Vet_Exames[93]
  Mat_Combo_Exames[18,2] <- Vet_Exames[110]
  Mat_Combo_Exames[18,3] <- Vet_Exames[111]
- Mat_Combo_Exames[19,0] <- " COMBO 19 - ULTRASSONOGRAFIA - OBSTETR�CIA                             		                         "
+ Mat_Combo_Exames[19,0] <- " COMBO 19 - ULTRASSONOGRAFIA - OBSTETRÍCIA                             		                         "
  Mat_Combo_Exames[19,1] <- Vet_Exames[106]
  Mat_Combo_Exames[19,2] <- Vet_Exames[107]
  Mat_Combo_Exames[19,3] <- Vet_Exames[108]
- Mat_Combo_Exames[20,0] <- " COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL�TICO E PARTES MOLES       		                         "
+ Mat_Combo_Exames[20,0] <- " COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUELÉTICO E PARTES MOLES       		                         "
  Mat_Combo_Exames[20,1] <- Vet_Exames[95]
  Mat_Combo_Exames[20,2] <- Vet_Exames[96]
  Mat_Combo_Exames[20,3] <- Vet_Exames[104]
@@ -1008,13 +1008,13 @@ Inicio
 
  //---------------------------------------------------------------------------------------------------------------------
 
- // VETOR DE COMBOS DE EXAMES - PRE�OS
+ // VETOR DE COMBOS DE EXAMES - PREÇOS
  
  para i de 1 ate 118 faca
-   Vet_Preco_Combo_Exames[i] <- Vet_Preco_Exame[i]
+   Vet_Preco_Exames_Combo[i] <- Vet_Preco_Exame[i]
    
-   se (Vet_Preco_Combo_Exames[i] > 50) entao
-     Vet_Preco_Combo_Exames[i] <- Vet_Preco_Combo_Exames[i] - 10
+   se (Vet_Preco_Exames_Combo[i] > 50) entao
+     Vet_Preco_Exames_Combo[i] <- Vet_Preco_Exames_Combo[i] - 10
    fimse
  fimpara
 
@@ -1053,7 +1053,7 @@ Inicio
  //---------------------------------------------------------------------------------------------------------------------
 
  repita
-   escreval("---------------------------------------------- PROCEDIMENTOS DISPON�VEIS --------------------------------------------")
+   escreval("---------------------------------------------- PROCEDIMENTOS DISPONÍVEIS --------------------------------------------")
    escreval
    
    para i de 0 ate 3 faca
@@ -1064,15 +1064,15 @@ Inicio
    escreval("---------------------------------------------------------------------------------------------------------------------")
    escreval
    
-   escreva(" DIGITE O C�DIGO DO PROCEDIMENTO: ")
+   escreva(" DIGITE O CÓDIGO DO PROCEDIMENTO: ")
    leia(Codigo_Procedimento)
    
    enquanto ((Codigo_Procedimento < 0) ou (Codigo_Procedimento > 3)) faca
      escreval
      escreval("---------------------------------------------------------------------------------------------------------------------")
      escreval
-     escreval(" C�DIGO INV�LIDO!")
-     escreva(" DIGITE NOVAMENTE O C�DIGO DO PROCEDIMENTO: ")
+     escreval(" CÓDIGO INVÁLIDO!")
+     escreva(" DIGITE NOVAMENTE O CÓDIGO DO PROCEDIMENTO: ")
      leia(Codigo_Procedimento)
    fimenquanto
    
@@ -1081,7 +1081,7 @@ Inicio
  ate ()
 
 
-//------------------------------------------------- TELA DE CONFIRMA��O -----------------------------------------------
+//------------------------------------------------- TELA DE CONFIRMAÇÃO -----------------------------------------------
 
 // 1. DADOS PESSOAIS
 
@@ -1089,16 +1089,16 @@ Inicio
 // DATA DE NASCIMENTO              : 20/10/1990
 // CPF                             : 123.456.789-10
 // RG                              : 12.345.678-9
-// NOME DA M�E                     : FERNANDA MARTINS ROCHA
-// G�NERO                          : FEMININO
+// NOME DA MÃE                     : FERNANDA MARTINS ROCHA
+// GÊNERO                          : FEMININO
 // ESTADO CIVIL                    : SOLTEIRO/A
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// 2. ENDERE�O
+// 2. ENDEREÇO
 
 // AVENIDA BRASIL, 123 - RESIDENCIAL BRASIL
-// S�O PAULO - SP - CEP: 12345-678
+// SÃO PAULO - SP - CEP: 12345-678
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -1116,24 +1116,24 @@ Inicio
 ---------------------------------------------------------------------------------------------------------------------
 
 // ESPECIALIDADE                   : 3 - CARDIOLOGIA
-// M�DICO(A) SOLICITANTE           : DR. FERNANDO GARC�A
-// MOTIVO DA CONSULTA              : REALIZA��O DE CHECK-UP GERAL (AVALIA��O CL�NICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI��ES DE SA�DE ANTES DO IN�CIO DE ESTRAT�GIA DE CUTTING (REDU��O DE GORDURA CORPORAL).
+// MÉDICO(A) SOLICITANTE           : DR. FERNANDO GARCÍA
+// MOTIVO DA CONSULTA              : REALIZAÇÃO DE CHECK-UP GERAL (AVALIAÇÃO CLÍNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDIÇÕES DE SAÚDE ANTES DO INÍCIO DE ESTRATÉGIA DE CUTTING (REDUÇÃO DE GORDURA CORPORAL).
 
 //---------------------------------------------------------------------------------------------------------------------
 
 // ESPECIALIDADE                   : 9 - ENDOCRINOLOGIA
-// M�DICO(A) SOLICITANTE           : DRA. GISELE FERNANDES
-// MOTIVO DA CONSULTA              : REALIZA��O DE CHECK-UP GERAL (AVALIA��O CL�NICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI��ES DE SA�DE ANTES DO IN�CIO DE ESTRAT�GIA DE CUTTING (REDU��O DE GORDURA CORPORAL).
+// MÉDICO(A) SOLICITANTE           : DRA. GISELE FERNANDES
+// MOTIVO DA CONSULTA              : REALIZAÇÃO DE CHECK-UP GERAL (AVALIAÇÃO CLÍNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDIÇÕES DE SAÚDE ANTES DO INÍCIO DE ESTRATÉGIA DE CUTTING (REDUÇÃO DE GORDURA CORPORAL).
 
 //---------------------------------------------------------------------------------------------------------------------
 
 // ESPECIALIDADE                   : 23 - ORTOPEDIA E TRAUMATOLOGIA
-// M�DICO(A) SOLICITANTE           : DR. PEDRO ALVES
-// MOTIVO DA CONSULTA              : REALIZA��O DE CHECK-UP GERAL (AVALIA��O CL�NICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDI��ES DE SA�DE ANTES DO IN�CIO DE ESTRAT�GIA DE CUTTING (REDU��O DE GORDURA CORPORAL).
+// MÉDICO(A) SOLICITANTE           : DR. PEDRO ALVES
+// MOTIVO DA CONSULTA              : REALIZAÇÃO DE CHECK-UP GERAL (AVALIAÇÃO CLÍNICA E EXAMES LABORATORIAIS) COM A FINALIDADE DE VERIFICAR AS CONDIÇÕES DE SAÚDE ANTES DO INÍCIO DE ESTRATÉGIA DE CUTTING (REDUÇÃO DE GORDURA CORPORAL).
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// 5. HOR�RIO AGENDADO:
+// 5. HORÁRIO AGENDADO:
 
 //--------------------------------------------- ESPECIALIDADES ESCOLHIDAS ---------------------------------------------
 
@@ -1152,14 +1152,14 @@ Inicio
 
 // COMBO 1 - CARDIOLOGIA E RISCO CARDIOVASCULAR                          		                          | R$ 480.00
 // COMBO 2 - ESPECIAL FIT                                                		                          | R$ 832.50
-// COMBO 7 - HEMATOLOGIA (SANGUE E C�LULAS)                              		                          | R$ 520.00
+// COMBO 7 - HEMATOLOGIA (SANGUE E CÉLULAS)                              		                          | R$ 520.00
 // COMBO 8 - HORMONAS SEXUAIS                                            		                          | R$ 300.00
 // COMBO 9 - IMUNOLOGIA E SEROLOGIA                                      		                          | R$ 615.00
 // COMBO 11 - METABOLISMO E ENERGIA                                      		                          | R$ 225.00
 // COMBO 12 - OUTRAS HORMONAS                                            		                          | R$ 252.50
-// COMBO 13 - PERFIL LIP�DICO                                            		                          | R$ 290.00
-// COMBO 14 - TIRE�IDE                                                   		                          | R$ 260.00
-// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL�TICO E PARTES MOLES       		                          | R$ 260.00
+// COMBO 13 - PERFIL LIPÍDICO                                            		                          | R$ 290.00
+// COMBO 14 - TIREÓIDE                                                   		                          | R$ 260.00
+// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUELÉTICO E PARTES MOLES       		                          | R$ 260.00
 // COMBO 22 - VITAMINAS E MINERAIS                                       		                          | R$ 440.00
 // COMBO 23 - EXTRA
 
@@ -1169,30 +1169,30 @@ Inicio
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// EXAMES DE SANGUE N�O PRECISAM DE AGENDAMENTO.
+// EXAMES DE SANGUE NÃO PRECISAM DE AGENDAMENTO.
 // ATENDIMENTO REALIZADO POR ORDEM DE CHEGADA.
-// RECOMENDAMOS JEJUM CONFORME ORIENTA��O M�DICA.
+// RECOMENDAMOS JEJUM CONFORME ORIENTAÇÃO MÉDICA.
 
-// HOR�RIO DE COLETA: DE SEGUNDA A S�BADO, DAS 7H �S 11H.
+// HORÁRIO DE COLETA: DE SEGUNDA A SÁBADO, DAS 7H ÀS 11H.
 
-// OBS.: TRAZER DOCUMENTO DE IDENTIFICA��O E PEDIDO M�DICO (SE HOUVER).
+// OBS.: TRAZER DOCUMENTO DE IDENTIFICAÇÃO E PEDIDO MÉDICO (SE HOUVER).
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// JEJUM DE 8�12 HORAS (IDEAL FAZER JUNTOS):
+// JEJUM DE 8–12 HORAS (IDEAL FAZER JUNTOS):
 
-// 1 - �CIDO F�LICO
-// 10 - APOLIPOPROTE�NAS A E B
-// 20 - C�LCIO
+// 1 - ÁCIDO FÓLICO
+// 10 - APOLIPOPROTEÍNAS A E B
+// 20 - CÁLCIO
 // 25 - COLESTEROL TOTAL
 // 37 - FERRITINA
 // 38 - FERRO
-// 40 - F�SFORO
+// 40 - FÓSFORO
 // 46 - HDL
-// 54 - HOMOCISTE�NA
+// 54 - HOMOCISTEÍNA
 // 58 - LDL
-// 60 - MAGN�SIO
-// 80 - TRIGLIC�RIDOS
+// 60 - MAGNÉSIO
+// 80 - TRIGLICÉRIDOS
 // 115 - VITAMINA B12
 // 116 - VITAMINA D
 // 117 - ZINCO
@@ -1204,16 +1204,16 @@ Inicio
 // 15 - BNP
 // 23 - CK-MB
 // 24 - COAGULOGRAMA (TP, INR, TTPA)
-// 32 - D-D�MERO
-// 39 - FIBRINOG�NIO
+// 32 - D-DÍMERO
+// 39 - FIBRINOGÉNIO
 // 50 - HEMOGRAMA COMPLETO
-// 70 - RETICUL�CITOS
+// 70 - RETICULÓCITOS
 // 81 - TROPONINA
-// 114 - VELOCIDADE DE SEDIMENTA��O (VHS / VSG)
+// 114 - VELOCIDADE DE SEDIMENTAÇÃO (VHS / VSG)
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// 6. INFORMA��ES ADICIONAIS
+// 6. INFORMAÇÕES ADICIONAIS
 
 // USA MEDICAMENTOS (S/N)?         : N
 // TEM ALERGIA A ALGUM MEDICAMENTO?: S - ASPIRINA
@@ -1235,14 +1235,14 @@ Inicio
 
 // COMBO 1 - CARDIOLOGIA E RISCO CARDIOVASCULAR                          		                             | R$  480.00
 // COMBO 2 - ESPECIAL FIT                                                		                             | R$  832.50
-// COMBO 7 - HEMATOLOGIA (SANGUE E C�LULAS)                              		                             | R$  520.00
+// COMBO 7 - HEMATOLOGIA (SANGUE E CÉLULAS)                              		                             | R$  520.00
 // COMBO 8 - HORMONAS SEXUAIS                                            		                             | R$  300.00
 // COMBO 9 - IMUNOLOGIA E SEROLOGIA                                      		                             | R$  615.00
 // COMBO 11 - METABOLISMO E ENERGIA                                      		                             | R$  225.00
 // COMBO 12 - OUTRAS HORMONAS                                            		                             | R$  252.50
-// COMBO 13 - PERFIL LIP�DICO                                            		                             | R$  290.00
-// COMBO 14 - TIRE�IDE                                                   		                             | R$  260.00
-// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUEL�TICO E PARTES MOLES       		                             | R$  260.00
+// COMBO 13 - PERFIL LIPÍDICO                                            		                             | R$  290.00
+// COMBO 14 - TIREÓIDE                                                   		                             | R$  260.00
+// COMBO 20 - ULTRASSONOGRAFIA - MUSCULOESQUELÉTICO E PARTES MOLES       		                             | R$  260.00
 // COMBO 22 - VITAMINAS E MINERAIS                                       		                             | R$  440.00
 // COMBO 23 - EXTRA                                                                                        | R$  450.00
 
@@ -1265,7 +1265,7 @@ Inicio
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// DESCONTO (B�NUS)                                                                                        | R$  249.94
+// DESCONTO (BÔNUS)                                                                                        | R$  249.94
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -1275,25 +1275,25 @@ Inicio
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// OBA! VOC� REALIZOU TODOS OS EXAMES SOLICITADOS PELO(S) M�DICO(S) DA CL�NICA CONOSCO E GANHOU UM B�NUS DE 5% DE
+// OBA! VOCÊ REALIZOU TODOS OS EXAMES SOLICITADOS PELO(S) MÉDICO(S) DA CLÍNICA CONOSCO E GANHOU UM BÔNUS DE 5% DE
 // DESCONTO NO VALOR TOTAL (CONSULTA(S) + EXAME(S))!
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// VOC� ECONOMIZOU R$ 496.19
+// VOCÊ ECONOMIZOU R$ 496.19
 
-// FORMA DE PAGAMENTO: CART�O DE CR�DITO - 6x DE R$ 791.47 - R$ 4748.81
+// FORMA DE PAGAMENTO: CARTÃO DE CRÉDITO - 6x DE R$ 791.47 - R$ 4748.81
 
 //---------------------------------------------------------------------------------------------------------------------
 
 // 8. CONSENTIMENTOS
 
-// [S] AUTORIZO O USO DOS MEUS DADOS PARA ATENDIMENTO M�DICO CONFORME LGPD
+// [S] AUTORIZO O USO DOS MEUS DADOS PARA ATENDIMENTO MÉDICO CONFORME LGPD
 // [S] AUTORIZO CONTATO VIA TELEFONE/WHATSAPP/E-MAIL
 
 //---------------------------------------------------------------------------------------------------------------------
 
-// OS DADOS ACIMA EST�O CORRETOS (S/N)*: S
+// OS DADOS ACIMA ESTÃO CORRETOS (S/N)*: S
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -1301,7 +1301,7 @@ Inicio
 
 // EXAMES E CONSULTAS AGENDADAS COM SUCESSO!
 
-// AGRADECEMOS A PREFER�NCIA! :-)
+// AGRADECEMOS A PREFERÊNCIA! :-)
 
 //---------------------------------------------------------------------------------------------------------------------
 
